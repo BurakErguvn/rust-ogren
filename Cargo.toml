@@ -1,10 +1,10 @@
 [workspace]
 members = [
+  "app/server",
+  "app/tools/*",
   "exercises/*/*",
   "helpers/common",
   "helpers/ticket_fields",
-  "app/server",
-  "app/tools/*",
 ]
 exclude = ["app/workspace"]
 resolver = "2"
