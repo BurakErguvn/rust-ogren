@@ -21,20 +21,21 @@ jobs:
           fetch-depth: 0
       - name: Get Core Sans
         uses: actions/checkout@v4
-        if: "!github.event.pull_request.head.repo.fork"
+        # Core Sans lives in a private Mainmatter repo: only available upstream, not on forks.
+        if: "github.repository == 'mainmatter/100-exercises-to-learn-rust' && !github.event.pull_request.head.repo.fork"
         with:
           fetch-depth: 0
           repository: mainmatter/core-sans-a-fonts
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           path: core-sans-a-fonts
       - name: Install Core Sans Font
-        if: "!github.event.pull_request.head.repo.fork"
+        if: "github.repository == 'mainmatter/100-exercises-to-learn-rust' && !github.event.pull_request.head.repo.fork"
         run: |
           sudo cp -r core-sans-a-fonts/* /usr/local/share/fonts/
           sudo fc-cache -f -v
           fc-list | grep "Core Sans"
-      - name: Use Fallback font for fork PRs
-        if: "github.event.pull_request.head.repo.fork"
+      - name: Use Fallback font for forks and fork PRs
+        if: "github.repository != 'mainmatter/100-exercises-to-learn-rust' || github.event.pull_request.head.repo.fork"
         run: |
           sed -i 's/"BoldFont=CoreSansA65.ttf",//g' book/book.toml
           sed -i 's/"ItalicFont=CoreSansA45It.ttf",//g' book/book.toml
