@@ -1,2 +1,13 @@
 target/
 exercises/progress.db
+
+# Turkish web app
+app/workspace/
+app/web/node_modules/
+app/web/.next/
+app/web/out/
+app/data/
+
+# Turkish web app (local planning files)
+PLAN.md
+.claude/
