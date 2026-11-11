@@ -149,6 +149,8 @@ jobs:
   gravity:
     runs-on: ubuntu-latest
     needs: [build]
+    # Needs Mainmatter's GRAVITY_TOKEN secret, which forks don't have.
+    if: github.repository == 'mainmatter/100-exercises-to-learn-rust'
     steps:
       - uses: actions/download-artifact@v4
         with:
