@@ -1,0 +1,24 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Backend for the Turkish interactive Rust course: content API, exercise runner, scoring, rust-analyzer bridge"
+
+[dependencies]
+axum = { version = "=0.8.9", default-features = false, features = ["http1", "json", "query", "tokio", "ws", "tracing"] }
+# tokio and libc are pinned to the versions already present in the root Cargo.lock
+# (shared with the exercises) to avoid churning the upstream lockfile.
+tokio = { version = "=1.52.3", features = ["full"] }
+libc = "=0.2.186"
+tower = { version = "=0.5.3", default-features = false, features = ["util"] }
+tower-http = { version = "=0.7.1", features = ["fs", "trace"] }
+futures-util = { version = "=0.3.34", default-features = false, features = ["sink", "std"] }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+# Same lexer version as app/tools/tr-check (already in Cargo.lock).
+ra_ap_rustc_lexer = { package = "ra-ap-rustc_lexer", version = "=0.184.0" }
+rusqlite = { version = "=0.41.1", features = ["bundled"] }
+toml = { version = "=1.2.1", default-features = false, features = ["parse", "display", "serde"] }
+tracing = "=0.1.44"
+tracing-subscriber = { version = "=0.3.23", features = ["env-filter", "fmt"] }
