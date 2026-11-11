@@ -3,7 +3,10 @@ members = [
   "exercises/*/*",
   "helpers/common",
   "helpers/ticket_fields",
+  "app/server",
+  "app/tools/*",
 ]
+exclude = ["app/workspace"]
 resolver = "2"
 
 # This is needed to guarantee the expected behaviour on that specific exercise,
