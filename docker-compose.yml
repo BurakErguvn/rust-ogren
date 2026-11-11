@@ -1,0 +1,24 @@
+# Rust Öğren (TR) — `docker compose up --build`, then open http://localhost:3000
+name: rust-ogren-tr
+
+services:
+  app:
+    build: .
+    image: rust-ogren-tr:latest
+    # Bound to localhost only: the server compiles and runs submitted code.
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      # Working copies of the exercises (+ cargo target dirs) and the progress database
+      # survive container restarts and image rebuilds.
+      - workspace:/app/app/workspace
+      - data:/app/app/data
+    environment:
+      COMPILE_TIMEOUT_SECS: "120"
+      TEST_TIMEOUT_SECS: "15"
+      RUST_LOG: "server=info"
+    restart: unless-stopped
+
+volumes:
+  workspace:
+  data:
