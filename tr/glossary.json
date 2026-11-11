@@ -1,0 +1,3029 @@
+{
+  "version": 1,
+  "terms": [
+    {
+      "en": "abort",
+      "policy": "translate",
+      "tr": "sonlandırmak",
+      "suffix": null,
+      "note": "cancel → iptal etmek ile ayrı tutulur; `abort()` kodda aynen.",
+      "first_seen": "08_futures/07_cancellation.md"
+    },
+    {
+      "en": "accessor method",
+      "policy": "translate",
+      "tr": "erişim metodu",
+      "suffix": "erişim metotları, erişim metodu",
+      "note": "Bir alanın değerini okumaya yarayan public metot; 'getter' ile eş anlamlı. getter → getter.",
+      "first_seen": "03_ticket_v1/05_encapsulation.md"
+    },
+    {
+      "en": "address space",
+      "policy": "translate",
+      "tr": "adres alanı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "03_ticket_v1/10_references_in_memory.md"
+    },
+    {
+      "en": "aliasing",
+      "policy": "keep",
+      "tr": null,
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/06_interior_mutability.md"
+    },
+    {
+      "en": "allocate",
+      "policy": "translate",
+      "tr": "bellek ayırmak",
+      "suffix": null,
+      "note": "allocate on the heap → heap'te bellek ayırmak; pre-allocate → önceden bellek ayırmak; heap-allocated → heap'te ayrılmış; stack-allocated → stack'te ayrılmış. Karşıtı için bkz. 'deallocate'.",
+      "first_seen": "03_ticket_v1/08_stack.md"
+    },
+    {
+      "en": "allocation",
+      "policy": "keep_gloss",
+      "tr": "bellek ayırma",
+      "suffix": "allocation'lar, allocation'ı, allocation'a",
+      "note": "İlk geçişte: allocation (bellek ayırma). heap allocation → heap allocation. Fiil için bkz. 'allocate'.",
+      "first_seen": "03_ticket_v1/08_stack.md"
+    },
+    {
+      "en": "allocator",
+      "policy": "keep_gloss",
+      "tr": "bellek ayırıcı",
+      "suffix": "allocator'lar, allocator'ı, allocator'a",
+      "note": "İlk geçişte: allocator (bellek ayırıcı). custom allocator → özel allocator.",
+      "first_seen": "03_ticket_v1/09_heap.md"
+    },
+    {
+      "en": "amortized",
+      "policy": "translate",
+      "tr": "amorti edilmek",
+      "suffix": null,
+      "note": null,
+      "first_seen": "08_futures/05_blocking.md"
+    },
+    {
+      "en": "annotation",
+      "policy": "translate",
+      "tr": "belirtim",
+      "suffix": null,
+      "note": "`#[should_panic]` gibi bir işaretleme için 'annotation' denirse 'belirtim' (tür belirtimi ile uyumlu). Söz dizimi olarak `#[...]` → attribute (öznitelik).",
+      "first_seen": "02_basic_calculator/04_panics.md"
+    },
+    {
+      "en": "API",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "API'ler, API'yi, API'ye",
+      "note": "public API → public API; REST API → REST API.",
+      "first_seen": "03_ticket_v1/09_heap.md"
+    },
+    {
+      "en": "application",
+      "policy": "translate",
+      "tr": "uygulama",
+      "suffix": "uygulamalar, uygulaması",
+      "note": "Program anlamında.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "architecture (machine)",
+      "policy": "translate",
+      "tr": "mimari",
+      "suffix": null,
+      "note": null,
+      "first_seen": "03_ticket_v1/10_references_in_memory.md"
+    },
+    {
+      "en": "argument",
+      "policy": "translate",
+      "tr": "argüman",
+      "suffix": "argümanlar, argümanı",
+      "note": "input argument → girdi argümanı. 'parameter' (parametre) ile karıştırma. impl Trait in argument position → argüman konumunda impl Trait.",
+      "first_seen": "02_basic_calculator/02_variables.md"
+    },
+    {
+      "en": "arm",
+      "policy": "keep_gloss",
+      "tr": "kol",
+      "suffix": "arm'lar, arm'ı, arm'a",
+      "note": "match arm → match arm'ı. İlk geçişte: arm (kol).",
+      "first_seen": "05_ticket_v2/02_match.md"
+    },
+    {
+      "en": "array",
+      "policy": "translate",
+      "tr": "dizi",
+      "suffix": "diziler, dizisi",
+      "note": "Rust'taki sabit boyutlu [T; N]. `Vec` için 'vektör' kullan. array slice → dizi slice'ı.",
+      "first_seen": "03_ticket_v1/09_heap.md"
+    },
+    {
+      "en": "assert",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "assert etmek, assert edilir",
+      "note": "Kod dışındaki fiil kullanımı ('we can assert that...'). Makro adları (`assert!`, `assert_eq!`) kodda aynen. assertion → assertion ('make assertions' → 'assertion yapmak').",
+      "first_seen": "exercises/02_basic_calculator/04_panics/src/lib.rs"
+    },
+    {
+      "en": "associated type",
+      "policy": "keep_gloss",
+      "tr": "ilişkili tür",
+      "suffix": "associated type'lar, associated type'ı",
+      "note": "İlk geçişte: associated type (ilişkili tür).",
+      "first_seen": "04_traits/07_deref.md"
+    },
+    {
+      "en": "associativity",
+      "policy": "translate",
+      "tr": "birleşme kuralları",
+      "suffix": null,
+      "note": "precedence and associativity → öncelik ve birleşme kuralları.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "async",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "async fonksiyon, async blok, async kod",
+      "note": "Prose'da sıfat olarak ('async code', 'async runtime') İngilizce kalır. Uzun biçim 'asynchronous' için bkz. 'asynchronous'.",
+      "first_seen": "08_futures/00_intro.md"
+    },
+    {
+      "en": "async-aware",
+      "policy": "keep_gloss",
+      "tr": "async'e duyarlı",
+      "suffix": null,
+      "note": "async-aware primitives → async-aware primitive'ler.",
+      "first_seen": "08_futures/06_async_aware_primitives.md"
+    },
+    {
+      "en": "asynchronous",
+      "policy": "translate",
+      "tr": "asenkron",
+      "suffix": null,
+      "note": "asynchronous function → asenkron fonksiyon; asynchronous block → asenkron blok; asynchronous programming → asenkron programlama. Karşıtı: synchronous → senkron.",
+      "first_seen": "08_futures/00_intro.md"
+    },
+    {
+      "en": "atomic",
+      "policy": "translate",
+      "tr": "atomik",
+      "suffix": null,
+      "note": "atomic reference counting → atomik referans sayımı; atomic integer → atomik tam sayı; atomically → atomik olarak.",
+      "first_seen": "07_threads/11_locks.md"
+    },
+    {
+      "en": "attribute",
+      "policy": "keep_gloss",
+      "tr": "öznitelik",
+      "suffix": "attribute'lar, attribute'u, attribute'a",
+      "note": "İlk geçişte: attribute (öznitelik). `#[derive(...)]`, `#[cfg(test)]` kodda aynen.",
+      "first_seen": "04_traits/04_derive.md"
+    },
+    {
+      "en": "auto trait",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "auto trait'ler, auto trait'i",
+      "note": "'auto-trait' yazımı da aynı terim.",
+      "first_seen": "04_traits/08_sized.md"
+    },
+    {
+      "en": "autocompletion",
+      "policy": "translate",
+      "tr": "otomatik tamamlama",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "backend",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "backend'i",
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "backpressure",
+      "policy": "keep_gloss",
+      "tr": "geri basınç",
+      "suffix": "backpressure'ı",
+      "note": "İlk geçişte: backpressure (geri basınç).",
+      "first_seen": "07_threads/09_bounded.md"
+    },
+    {
+      "en": "benchmark",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "benchmark'lar, benchmark'ı",
+      "note": null,
+      "first_seen": "02_basic_calculator/08_overflow.md"
+    },
+    {
+      "en": "binary",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "binary'ler, binary'yi, binary'ye",
+      "note": "Çalıştırılabilir program anlamında. binary crate → binary crate'i; binary target → binary target'ı.",
+      "first_seen": "05_ticket_v2/00_intro.md"
+    },
+    {
+      "en": "binding",
+      "policy": "keep_gloss",
+      "tr": "bağlama",
+      "suffix": "binding'ler, binding'i",
+      "note": "match pattern'ındaki değişken bağlama. Fiil 'bind' → 'bağlamak'.",
+      "first_seen": "05_ticket_v2/03_variants_with_data.md"
+    },
+    {
+      "en": "bitwise copy",
+      "policy": "translate",
+      "tr": "bit düzeyinde kopya",
+      "suffix": null,
+      "note": null,
+      "first_seen": "04_traits/12_copy.md"
+    },
+    {
+      "en": "blanket implementation",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "blanket implementation'lar, blanket implementation'ı",
+      "note": null,
+      "first_seen": "04_traits/09_from.md"
+    },
+    {
+      "en": "block",
+      "policy": "translate",
+      "tr": "blok",
+      "suffix": "bloklar, bloğu",
+      "note": "block of code → kod bloğu; impl block → `impl` bloğu; unsafe block → `unsafe` bloğu. Fiil anlamı (beklemeye sokmak) için bkz. 'blocking'.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "blocking",
+      "policy": "translate",
+      "tr": "bloklama",
+      "suffix": null,
+      "note": "to block → bloklamak ('it will block' → 'bloklar'); blocking the runtime → runtime'ı bloklamak; non-blocking → bloklamayan. tokio'nun 'blocking pool'u ayrı madde.",
+      "first_seen": "07_threads/09_bounded.md"
+    },
+    {
+      "en": "blocking pool",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "blocking pool'u, blocking pool'da",
+      "note": "tokio terimi. thread pool / threadpool → thread pool.",
+      "first_seen": "08_futures/05_blocking.md"
+    },
+    {
+      "en": "boilerplate",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "boilerplate'i",
+      "note": "boilerplate code → boilerplate kod.",
+      "first_seen": "05_ticket_v2/10_packages.md"
+    },
+    {
+      "en": "bookkeeping",
+      "policy": "translate",
+      "tr": "kayıt tutma",
+      "suffix": null,
+      "note": null,
+      "first_seen": "03_ticket_v1/08_stack.md"
+    },
+    {
+      "en": "boolean",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "boolean'lar, boolean'ı",
+      "note": "Kod içindeki tür adı `bool`.",
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "borrow",
+      "policy": "translate",
+      "tr": "ödünç almak",
+      "suffix": null,
+      "note": "Fiil (STYLE §6). borrowed → ödünç alınmış; mutable borrow → mutable ödünç alma; borrow from the environment → ortamdan ödünç almak. İsim/kavram adı için bkz. 'borrowing'.",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "borrow checker",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "borrow checker'ı, borrow checker'a",
+      "note": "'borrow-checker' yazımı da aynı terim. runtime borrow checking → çalışma zamanında borrow checking.",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "borrowing",
+      "policy": "keep_gloss",
+      "tr": "ödünç alma",
+      "suffix": "borrowing'i",
+      "note": "Kavram adı ('ownership and borrowing', başlıklar). İlk geçişte: borrowing (ödünç alma). Fiil için bkz. 'borrow'.",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "bounded channel",
+      "policy": "translate",
+      "tr": "sınırlı kanal",
+      "suffix": null,
+      "note": "unbounded channel → sınırsız kanal.",
+      "first_seen": "07_threads/09_bounded.md"
+    },
+    {
+      "en": "bounds checking",
+      "policy": "translate",
+      "tr": "sınır denetimi",
+      "suffix": null,
+      "note": "bounds check → sınır denetimi; bounds-checked → sınırları denetlenen; out of bounds → sınırların dışında.",
+      "first_seen": "06_ticket_management/01_arrays.md"
+    },
+    {
+      "en": "branch",
+      "policy": "translate",
+      "tr": "dal",
+      "suffix": "dallar, dalı",
+      "note": "if/else/match dalları ('else branch' → 'else dalı'). Git branch'i için bkz. 'branch (git)'. branching → dallanma.",
+      "first_seen": "02_basic_calculator/03_if_else.md"
+    },
+    {
+      "en": "branch (git)",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "branch'ler, branch'i, branch'te",
+      "note": "Git dalı. 'solutions branch' → 'solutions branch'i'.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "buffer",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "buffer'lar, buffer'ı",
+      "note": "memory buffer → bellek buffer'ı; buffering → buffer'lama.",
+      "first_seen": "03_ticket_v1/09_heap.md"
+    },
+    {
+      "en": "bug",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "bug'lar, bug'ı, bug'a",
+      "note": "Programdaki kusur. 'error' (hata) ile karıştırma: 'runtime bugs' → 'çalışma zamanı bug'ları'.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "build",
+      "policy": "translate",
+      "tr": "derlemek",
+      "suffix": null,
+      "note": "cargo build / derleme anlamında: 'different builds' → 'farklı derlemeler'; build tool → derleme aracı. 'build a system / an abstraction' gibi genel anlamda → 'oluşturmak', 'inşa etmek'.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "byte",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "byte'lar, byte'ı",
+      "note": null,
+      "first_seen": "03_ticket_v1/08_stack.md"
+    },
+    {
+      "en": "call",
+      "policy": "translate",
+      "tr": "çağırmak",
+      "suffix": null,
+      "note": "function call → fonksiyon çağrısı; method call syntax → metot çağrı söz dizimi. invoke da 'çağırmak' (invocation → çağrı; macro invocation → makro çağrısı). caller → çağıran; callee → çağrılan; call site → çağrı noktası.",
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "call site",
+      "policy": "translate",
+      "tr": "çağrı noktası",
+      "suffix": null,
+      "note": null,
+      "first_seen": "05_ticket_v2/06_question_mark.md"
+    },
+    {
+      "en": "cancellation",
+      "policy": "translate",
+      "tr": "iptal",
+      "suffix": null,
+      "note": "cancel → iptal etmek; cancelled → iptal edilmiş; cancellation point → iptal noktası; graceful cancellation → kontrollü iptal; cancellation safety → iptal güvenliği.",
+      "first_seen": "08_futures/07_cancellation.md"
+    },
+    {
+      "en": "capacity",
+      "policy": "translate",
+      "tr": "kapasite",
+      "suffix": null,
+      "note": "length → uzunluk.",
+      "first_seen": "06_ticket_management/03_resizing.md"
+    },
+    {
+      "en": "capture",
+      "policy": "translate",
+      "tr": "yakalamak",
+      "suffix": null,
+      "note": "Closure'ın ortamındaki değişkenleri yakalaması. Hata bağlamında 'capturing error context' → 'hata bağlamını kaydetmek'.",
+      "first_seen": "06_ticket_management/07_combinators.md"
+    },
+    {
+      "en": "cast",
+      "policy": "keep_gloss",
+      "tr": "tür dönüştürme",
+      "suffix": "cast etmek, cast'i, cast'ler",
+      "note": "`as` casting → `as` ile cast etme. İlk geçişte: cast (tür dönüştürme).",
+      "first_seen": "02_basic_calculator/10_as_casting.md"
+    },
+    {
+      "en": "catch-all",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "catch-all'ı",
+      "note": "`_` pattern'ı. Gerekirse 'her şeyi yakalayan (catch-all) pattern'.",
+      "first_seen": "05_ticket_v2/02_match.md"
+    },
+    {
+      "en": "channel",
+      "policy": "translate",
+      "tr": "kanal",
+      "suffix": "kanallar, kanalı",
+      "note": "response channel → yanıt kanalı; channel serialization → kanal üzerinden sıraya sokma. sender → gönderici; receiver → alıcı (`Sender`/`Receiver` kodda aynen); message passing → mesaj iletimi.",
+      "first_seen": "07_threads/00_intro.md"
+    },
+    {
+      "en": "chapter",
+      "policy": "translate",
+      "tr": "bölüm",
+      "suffix": "bölümler, bölümü",
+      "note": "Kitabın ana bölümleri (01_intro, 02_basic_calculator...). Sayfa için bkz. 'section'.",
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "CI",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "CI'da",
+      "note": null,
+      "first_seen": "05_ticket_v2/11_dependencies.md"
+    },
+    {
+      "en": "class",
+      "policy": "translate",
+      "tr": "sınıf",
+      "suffix": null,
+      "note": "OOP bağlamında; object → nesne.",
+      "first_seen": "03_ticket_v1/05_encapsulation.md"
+    },
+    {
+      "en": "clause",
+      "policy": "translate",
+      "tr": "blok",
+      "suffix": null,
+      "note": "`if` clause → `if` bloğu; `else` clause → `else` bloğu; `where` clause → `where` bloğu.",
+      "first_seen": "02_basic_calculator/03_if_else.md"
+    },
+    {
+      "en": "CLI",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "CLI'ı, CLI'lar",
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "client",
+      "policy": "translate",
+      "tr": "istemci",
+      "suffix": "istemciler, istemcisi",
+      "note": "client-server architecture → istemci-sunucu mimarisi; client thread → istemci thread'i; client-side → istemci tarafı. server → sunucu; server-side → sunucu tarafı; echo server → echo sunucusu.",
+      "first_seen": "07_threads/05_channels.md"
+    },
+    {
+      "en": "clone",
+      "policy": "translate",
+      "tr": "klonlamak",
+      "suffix": null,
+      "note": "Hem git repo'sunu klonlamak hem bir değeri klonlamak. `Clone` trait adı ve `.clone()` kodda aynen. clonable/cloneable → klonlanabilir; cloning → klonlama.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "closure",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "closure'lar, closure'ı, closure'a",
+      "note": "Closure = anonymous function → anonim fonksiyon.",
+      "first_seen": "06_ticket_management/07_combinators.md"
+    },
+    {
+      "en": "codebase",
+      "policy": "translate",
+      "tr": "kod tabanı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "05_ticket_v2/00_intro.md"
+    },
+    {
+      "en": "coercion",
+      "policy": "keep_gloss",
+      "tr": "örtük tür dönüşümü",
+      "suffix": "coercion'ı",
+      "note": "type coercion → type coercion (örtük tür dönüşümü). 'deref coercion' ayrı madde.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "combinator",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "combinator'lar, combinator'ı",
+      "note": null,
+      "first_seen": "05_ticket_v2/07_unwrap.md"
+    },
+    {
+      "en": "comment",
+      "policy": "translate",
+      "tr": "yorum",
+      "suffix": null,
+      "note": "line comment → satır yorumu; single-line comment → tek satırlık yorum; documentation comment → dokümantasyon yorumu; comment out → yorum satırına almak.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "commit",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "commit'ler, commit'i; commit'lemek",
+      "note": "Git commit'i. 'commit the Cargo.lock file' → 'Cargo.lock dosyasını commit'lemek'.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "compile",
+      "policy": "translate",
+      "tr": "derlemek",
+      "suffix": null,
+      "note": "compiles → derlenir; compilation → derleme; compilation error → derleme hatası; compilation time → derleme süresi.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "compile time",
+      "policy": "translate",
+      "tr": "derleme zamanı",
+      "suffix": null,
+      "note": "at compile time → derleme zamanında. 'compile-time' yazımı da aynı terim.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "compiler",
+      "policy": "translate",
+      "tr": "derleyici",
+      "suffix": null,
+      "note": "compiler error → derleyici hatası.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "composite type",
+      "policy": "translate",
+      "tr": "bileşik tür",
+      "suffix": null,
+      "note": null,
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "concurrency",
+      "policy": "translate",
+      "tr": "eşzamanlılık",
+      "suffix": null,
+      "note": "concurrent → eşzamanlı; concurrently → eşzamanlı olarak. 'parallelism' (paralellik) ile karıştırma. synchronization → senkronizasyon; synchronous → senkron.",
+      "first_seen": "07_threads/00_intro.md"
+    },
+    {
+      "en": "construct",
+      "policy": "translate",
+      "tr": "yapı",
+      "suffix": null,
+      "note": "İsim anlamında: looping construct → döngü yapısı; control flow constructs → kontrol akışı yapıları. Fiil 'construct' → oluşturmak; 'by construction' → 'oluşturulma biçimi gereği'.",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "constructor",
+      "policy": "keep_gloss",
+      "tr": "yapıcı",
+      "suffix": "constructor'lar, constructor'ı",
+      "note": "İlk geçişte: constructor (yapıcı).",
+      "first_seen": "03_ticket_v1/05_encapsulation.md"
+    },
+    {
+      "en": "consume",
+      "policy": "translate",
+      "tr": "tüketmek",
+      "suffix": null,
+      "note": "Sahipliği alıp değeri kullanılamaz kılmak. 'consumer' (tüketici) için bkz. 'mpsc'.",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "contention",
+      "policy": "translate",
+      "tr": "çekişme",
+      "suffix": null,
+      "note": "lock contention → kilit çekişmesi.",
+      "first_seen": "08_futures/06_async_aware_primitives.md"
+    },
+    {
+      "en": "contiguous",
+      "policy": "translate",
+      "tr": "bitişik",
+      "suffix": null,
+      "note": "contiguous sequence → bitişik seri.",
+      "first_seen": "06_ticket_management/10_slices.md"
+    },
+    {
+      "en": "contract",
+      "policy": "translate",
+      "tr": "sözleşme",
+      "suffix": null,
+      "note": "Trait/fonksiyon imzasının sözleşmesi.",
+      "first_seen": "04_traits/01_trait.md"
+    },
+    {
+      "en": "control flow",
+      "policy": "translate",
+      "tr": "kontrol akışı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "convention",
+      "policy": "translate",
+      "tr": "gelenek",
+      "suffix": null,
+      "note": "Cargo conventions → Cargo gelenekleri.",
+      "first_seen": "05_ticket_v2/10_packages.md"
+    },
+    {
+      "en": "conversion",
+      "policy": "translate",
+      "tr": "dönüşüm",
+      "suffix": null,
+      "note": "convert → dönüştürmek; type conversion → tür dönüşümü.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "course",
+      "policy": "translate",
+      "tr": "kurs",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "CPU-bound",
+      "policy": "translate",
+      "tr": "CPU'ya bağlı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "08_futures/05_blocking.md"
+    },
+    {
+      "en": "crate",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "crate'ler, crate'i, crate'e, crate'in",
+      "note": "library crate → kütüphane crate'i; binary crate → binary crate'i; third-party crate → üçüncü taraf crate. crate root → crate kökü.",
+      "first_seen": "03_ticket_v1/03_modules.md"
+    },
+    {
+      "en": "current-thread runtime",
+      "policy": "translate",
+      "tr": "mevcut thread runtime'ı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "08_futures/03_runtime.md"
+    },
+    {
+      "en": "dangling pointer",
+      "policy": "keep_gloss",
+      "tr": "sarkan pointer",
+      "suffix": "dangling pointer'lar, dangling pointer'ı",
+      "note": "İlk geçişte: dangling pointer (sarkan pointer). dangling reference → dangling referans.",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "data race",
+      "policy": "keep_gloss",
+      "tr": "veri yarışı",
+      "suffix": "data race'ler, data race'i",
+      "note": "İlk geçişte: data race (veri yarışı).",
+      "first_seen": "07_threads/14_sync.md"
+    },
+    {
+      "en": "deadlock",
+      "policy": "keep_gloss",
+      "tr": "kilitlenme",
+      "suffix": "deadlock'lar, deadlock'u, deadlock'a",
+      "note": "İlk geçişte: deadlock (kilitlenme).",
+      "first_seen": "08_futures/05_blocking.md"
+    },
+    {
+      "en": "deallocate",
+      "policy": "translate",
+      "tr": "serbest bırakmak",
+      "suffix": null,
+      "note": "de-allocation → serbest bırakma; free (memory) → serbest bırakmak; freed → serbest bırakılmış.",
+      "first_seen": "03_ticket_v1/08_stack.md"
+    },
+    {
+      "en": "declare",
+      "policy": "translate",
+      "tr": "bildirmek",
+      "suffix": null,
+      "note": "declaration → bildirim (değişken bildirimi, modül bildirimi). 'define' (tanımlamak) ile ayrımı koru.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "deep copy",
+      "policy": "translate",
+      "tr": "derin kopya",
+      "suffix": null,
+      "note": null,
+      "first_seen": "04_traits/11_clone.md"
+    },
+    {
+      "en": "define",
+      "policy": "translate",
+      "tr": "tanımlamak",
+      "suffix": null,
+      "note": "definition → tanım. 'declare' (bildirmek) ile ayrımı koru.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "delegate",
+      "policy": "translate",
+      "tr": "devretmek",
+      "suffix": null,
+      "note": null,
+      "first_seen": "06_ticket_management/04_iterators.md"
+    },
+    {
+      "en": "dependency",
+      "policy": "translate",
+      "tr": "bağımlılık",
+      "suffix": "bağımlılıklar, bağımlılığı",
+      "note": "depend on → -e bağımlı olmak; dev dependencies → geliştirme bağımlılıkları; path dependency → path bağımlılığı; dependency resolution → bağımlılık çözümleme. lockfile (`Cargo.lock`) → lockfile.",
+      "first_seen": "05_ticket_v2/10_packages.md"
+    },
+    {
+      "en": "deref coercion",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "deref coercion'ı",
+      "note": "İsim olarak İngilizce; fiil 'deref to' → '...'ye deref edilir'. dereference → dereference (dereference operator → dereference operatörü).",
+      "first_seen": "04_traits/00_intro.md"
+    },
+    {
+      "en": "derive",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "derive etmek, derive edilir",
+      "note": "`#[derive(...)]` ile trait'i otomatik implement ettirmek. derivable → derive edilebilir.",
+      "first_seen": "04_traits/04_derive.md"
+    },
+    {
+      "en": "derive macro",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "derive macro'lar, derive macro'yu",
+      "note": null,
+      "first_seen": "04_traits/04_derive.md"
+    },
+    {
+      "en": "destructor",
+      "policy": "keep_gloss",
+      "tr": "yıkıcı",
+      "suffix": "destructor'lar, destructor'ı",
+      "note": "İlk geçişte: destructor (yıkıcı).",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "destructuring",
+      "policy": "keep_gloss",
+      "tr": "parçalara ayırma",
+      "suffix": "destructuring'i; destructure etmek",
+      "note": "İlk geçişte: destructuring (parçalara ayırma).",
+      "first_seen": "04_traits/04_derive.md"
+    },
+    {
+      "en": "desugar",
+      "policy": "keep_gloss",
+      "tr": "sözdizimsel şekeri açmak",
+      "suffix": "desugar etmek, desugar edilir",
+      "note": "İlk geçişte: desugar (sözdizimsel şekeri açmak). 'for desugaring' → 'for'un desugar edilmesi'.",
+      "first_seen": "06_ticket_management/04_iterators.md"
+    },
+    {
+      "en": "directory",
+      "policy": "translate",
+      "tr": "dizin",
+      "suffix": null,
+      "note": "folder → klasör.",
+      "first_seen": "05_ticket_v2/10_packages.md"
+    },
+    {
+      "en": "distributed systems",
+      "policy": "translate",
+      "tr": "dağıtık sistemler",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/13_without_channels.md"
+    },
+    {
+      "en": "documentation",
+      "policy": "translate",
+      "tr": "dokümantasyon",
+      "suffix": null,
+      "note": "documentation comment → dokümantasyon yorumu; docs → dokümantasyon.",
+      "first_seen": "02_basic_calculator/04_panics.md"
+    },
+    {
+      "en": "domain",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "domain'ler, domain'i",
+      "note": "domain modelling → domain modelleme; domain invariants → domain invariant'ları. 'Uygulama alanı' anlamında (going_further: 'backend, embedded, CLIs...') → 'alan'.",
+      "first_seen": "05_ticket_v2/00_intro.md"
+    },
+    {
+      "en": "double free",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "double free bug'ları",
+      "note": "'double-free error' → 'double-free hatası'.",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "drop",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "drop etmek, drop edilir, drop edilmiş",
+      "note": "Değerin kapsam dışına çıkıp destructor'ının çalışması: 'the value has been dropped' → 'değer drop edildi'. drop point → drop noktası. `drop` fonksiyonu ve `Drop` trait'i kodda aynen.",
+      "first_seen": "03_ticket_v1/11_destructor.md"
+    },
+    {
+      "en": "drop bomb",
+      "policy": "translate",
+      "tr": "Drop bombası",
+      "suffix": null,
+      "note": null,
+      "first_seen": "04_traits/13_drop.md"
+    },
+    {
+      "en": "dual trait",
+      "policy": "translate",
+      "tr": "ikiz trait",
+      "suffix": "ikiz trait'ler",
+      "note": "Biri implement edilince diğeri otomatik gelen trait çifti (`From`/`Into`). duality → ikizlik.",
+      "first_seen": "04_traits/09_from.md"
+    },
+    {
+      "en": "dynamically sized type",
+      "policy": "keep_gloss",
+      "tr": "dinamik boyutlu tür",
+      "suffix": "DST'ler, DST'yi",
+      "note": "Kısaltma DST aynen kalır. İlk geçişte: dynamically sized type (dinamik boyutlu tür, DST).",
+      "first_seen": "04_traits/08_sized.md"
+    },
+    {
+      "en": "eager",
+      "policy": "keep_gloss",
+      "tr": "hemen çalışan",
+      "suffix": null,
+      "note": "'eager functions' → 'eager (hemen çalışan) fonksiyonlar'. Karşıtı: lazy.",
+      "first_seen": "08_futures/01_async_fn.md"
+    },
+    {
+      "en": "ecosystem",
+      "policy": "translate",
+      "tr": "ekosistem",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "encapsulation",
+      "policy": "translate",
+      "tr": "kapsülleme",
+      "suffix": null,
+      "note": "encapsulate → kapsüllemek.",
+      "first_seen": "03_ticket_v1/03_modules.md"
+    },
+    {
+      "en": "endpoint",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "endpoint'ler",
+      "note": null,
+      "first_seen": "08_futures/08_outro.md"
+    },
+    {
+      "en": "enforce",
+      "policy": "translate",
+      "tr": "zorunlu kılmak",
+      "suffix": null,
+      "note": "enforce invariants → invariant'ları zorunlu kılmak.",
+      "first_seen": "03_ticket_v1/02_validation.md"
+    },
+    {
+      "en": "enqueue",
+      "policy": "translate",
+      "tr": "kuyruğa eklemek",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/09_bounded.md"
+    },
+    {
+      "en": "enum",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "enum'lar, enum'u, enum'a",
+      "note": "C-style enum → C tarzı enum; error enum → hata enum'u.",
+      "first_seen": "05_ticket_v2/02_match.md"
+    },
+    {
+      "en": "enumeration",
+      "policy": "keep_gloss",
+      "tr": "numaralandırma",
+      "suffix": "enumeration'lar",
+      "note": null,
+      "first_seen": "05_ticket_v2/01_enum.md"
+    },
+    {
+      "en": "environment",
+      "policy": "translate",
+      "tr": "ortam",
+      "suffix": null,
+      "note": "borrowing from the environment → ortamdan ödünç alma; spawning environment → spawn eden ortam.",
+      "first_seen": "06_ticket_management/07_combinators.md"
+    },
+    {
+      "en": "epilogue",
+      "policy": "translate",
+      "tr": "Son Söz",
+      "suffix": null,
+      "note": null,
+      "first_seen": "going_further.md"
+    },
+    {
+      "en": "error",
+      "policy": "translate",
+      "tr": "hata",
+      "suffix": "hatalar, hatası",
+      "note": "error type → hata türü; error message → hata mesajı; error enum → hata enum'u; error cause → hata nedeni; error case → hata durumu. `Error` trait adı kodda aynen. error handling → hata yönetimi (handle an error → hatayı ele almak); error reporting → hata raporlama; recoverable/unrecoverable error → kurtarılabilir/kurtarılamaz hata.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "exception",
+      "policy": "translate",
+      "tr": "istisna",
+      "suffix": null,
+      "note": "throw an exception → istisna fırlatmak; catch → yakalamak; exception handling → istisna yönetimi.",
+      "first_seen": "05_ticket_v2/06_fallibility.md"
+    },
+    {
+      "en": "execution context",
+      "policy": "translate",
+      "tr": "yürütme bağlamı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/01_threads.md"
+    },
+    {
+      "en": "executor",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "executor'lar, executor'ı, executor'a",
+      "note": "async executor → async executor; 'runtime' ile eş anlamlı kullanılır.",
+      "first_seen": "08_futures/01_async_fn.md"
+    },
+    {
+      "en": "exercise",
+      "policy": "translate",
+      "tr": "egzersiz",
+      "suffix": "egzersizler, egzersizi",
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "exhaustive",
+      "policy": "translate",
+      "tr": "eksiksiz",
+      "suffix": null,
+      "note": "exhaustiveness → eksiksizlik ('match is exhaustive' → 'match eksiksizdir'). 'exhaustive list' → 'tam liste'.",
+      "first_seen": "02_basic_calculator/10_as_casting.md"
+    },
+    {
+      "en": "explicit",
+      "policy": "translate",
+      "tr": "açık",
+      "suffix": null,
+      "note": "explicitly → açıkça; explicit type annotation → açık tür belirtimi. Karşıtı: implicit → örtük.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "expression",
+      "policy": "translate",
+      "tr": "ifade",
+      "suffix": "ifadeler, ifadesi",
+      "note": "'statement' (deyim) ile karıştırma: 'if expressions are expressions, not statements' → 'if ifadeleri deyim değil, ifadedir'.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "extension (editor)",
+      "policy": "translate",
+      "tr": "eklenti",
+      "suffix": null,
+      "note": "VS Code eklentisi.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "extension trait",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "extension trait'ler, extension trait'i",
+      "note": null,
+      "first_seen": "04_traits/02_orphan_rule.md"
+    },
+    {
+      "en": "fallible",
+      "policy": "translate",
+      "tr": "başarısız olabilen",
+      "suffix": null,
+      "note": "fallibility → başarısız olabilirlik; infallible → başarısız olamayan; fallible conversion → başarısız olabilen dönüşüm.",
+      "first_seen": "02_basic_calculator/10_as_casting.md"
+    },
+    {
+      "en": "falsy",
+      "policy": "keep",
+      "tr": null,
+      "suffix": null,
+      "note": "Orijinalde kalınsa kalın kalır; açıklama eklenmez. Bkz. truthy.",
+      "first_seen": "02_basic_calculator/03_if_else.md"
+    },
+    {
+      "en": "fat pointer",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "fat pointer'lar, fat pointer'ı",
+      "note": "Ek meta veri (ör. uzunluk) taşıyan pointer. Karşıtı: thin pointer. thin pointer → thin pointer.",
+      "first_seen": "03_ticket_v1/10_references_in_memory.md"
+    },
+    {
+      "en": "fearless concurrency",
+      "policy": "keep_gloss",
+      "tr": "korkusuz eşzamanlılık",
+      "suffix": null,
+      "note": "İlk geçişte: fearless concurrency (korkusuz eşzamanlılık).",
+      "first_seen": "07_threads/00_intro.md"
+    },
+    {
+      "en": "field",
+      "policy": "translate",
+      "tr": "alan",
+      "suffix": "alanlar, alanı",
+      "note": "struct alanı; unnamed field → isimsiz alan.",
+      "first_seen": "03_ticket_v1/01_struct.md"
+    },
+    {
+      "en": "flag (command-line)",
+      "policy": "translate",
+      "tr": "bayrak",
+      "suffix": null,
+      "note": "`--release` bayrağı.",
+      "first_seen": "02_basic_calculator/08_overflow.md"
+    },
+    {
+      "en": "flavor (runtime)",
+      "policy": "translate",
+      "tr": "çeşit",
+      "suffix": null,
+      "note": "İlk geçişte: runtime çeşidi (flavor).",
+      "first_seen": "08_futures/03_runtime.md"
+    },
+    {
+      "en": "folder",
+      "policy": "translate",
+      "tr": "klasör",
+      "suffix": null,
+      "note": "directory → dizin; top-level folder → kök klasör.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "fragmentation (memory)",
+      "policy": "translate",
+      "tr": "parçalanma",
+      "suffix": null,
+      "note": null,
+      "first_seen": "03_ticket_v1/09_heap.md"
+    },
+    {
+      "en": "framework",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "framework'ü, framework'ler",
+      "note": "test framework → test framework'ü.",
+      "first_seen": "02_basic_calculator/04_panics.md"
+    },
+    {
+      "en": "function",
+      "policy": "translate",
+      "tr": "fonksiyon",
+      "suffix": "fonksiyonlar, fonksiyonu",
+      "note": "function body → fonksiyon gövdesi; generic function → generic fonksiyon.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "functional programming",
+      "policy": "translate",
+      "tr": "fonksiyonel programlama",
+      "suffix": null,
+      "note": null,
+      "first_seen": "02_basic_calculator/07_for.md"
+    },
+    {
+      "en": "future",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "future'lar, future'ı, future'a",
+      "note": "`Future` trait adı kodda aynen.",
+      "first_seen": "08_futures/00_intro.md"
+    },
+    {
+      "en": "garbage collector",
+      "policy": "keep_gloss",
+      "tr": "çöp toplayıcı",
+      "suffix": "garbage collector'ı",
+      "note": "İlk geçişte: garbage collector (çöp toplayıcı).",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "generic",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "generic'ler, generic'i",
+      "note": "generics → generic'ler; generic function → generic fonksiyon; 'generic over X' → 'X üzerinde generic'; generic programming → generic programlama. generic parameter → generic parametre.",
+      "first_seen": "04_traits/05_trait_bounds.md"
+    },
+    {
+      "en": "granularity",
+      "policy": "translate",
+      "tr": "ayrıntı düzeyi",
+      "suffix": null,
+      "note": "locking granularity → kilitleme ayrıntı düzeyi.",
+      "first_seen": "07_threads/11_locks.md"
+    },
+    {
+      "en": "guard",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "guard'lar, guard'ı",
+      "note": "MutexGuard gibi kilit nesnesi: 'guard object' → 'guard nesnesi'.",
+      "first_seen": "07_threads/11_locks.md"
+    },
+    {
+      "en": "guardrail",
+      "policy": "translate",
+      "tr": "güvenlik önlemi",
+      "suffix": null,
+      "note": null,
+      "first_seen": "02_basic_calculator/10_as_casting.md"
+    },
+    {
+      "en": "handle",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "handle'lar, handle'ı",
+      "note": "İsim: bir kaynağa erişim tutamacı (JoinHandle; file handle → dosya handle'ı). Fiil 'handle' → 'ele almak / işlemek' (handle errors → hataları ele almak).",
+      "first_seen": "04_traits/12_copy.md"
+    },
+    {
+      "en": "hard error",
+      "policy": "translate",
+      "tr": "doğrudan hata",
+      "suffix": null,
+      "note": "Lint uyarısı değil, derlemeyi durduran hata.",
+      "first_seen": "02_basic_calculator/10_as_casting.md"
+    },
+    {
+      "en": "hash",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "hash'ler, hash'i; hash'lemek",
+      "note": "hashing function → hash fonksiyonu; hash collision → hash çakışması; hashable → hash'lenebilir; hasher → hasher.",
+      "first_seen": "06_ticket_management/15_hashmap.md"
+    },
+    {
+      "en": "heap",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "heap'ler, heap'i, heap'e, heap'te",
+      "note": "Türkçe 'öbek/yığın' karşılıkları kullanılmaz (stack ile karışır).",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "homogeneous collection",
+      "policy": "translate",
+      "tr": "homojen koleksiyon",
+      "suffix": null,
+      "note": null,
+      "first_seen": "06_ticket_management/01_arrays.md"
+    },
+    {
+      "en": "IDE",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "IDE'ler, IDE'de",
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "identifier",
+      "policy": "translate",
+      "tr": "tanımlayıcı",
+      "suffix": null,
+      "note": "id kısaltması aynen: id'si.",
+      "first_seen": "06_ticket_management/12_two_states.md"
+    },
+    {
+      "en": "idiomatic",
+      "policy": "translate",
+      "tr": "idiomatik",
+      "suffix": null,
+      "note": "Rust'ın yerleşik kullanım alışkanlıklarına uygun.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "immutable",
+      "policy": "keep_gloss",
+      "tr": "değiştirilemez",
+      "suffix": "immutable'dır",
+      "note": "immutable reference → immutable referans; immutably → immutable olarak. İlk geçişte: immutable (değiştirilemez).",
+      "first_seen": "02_basic_calculator/06_while.md"
+    },
+    {
+      "en": "imperative",
+      "policy": "translate",
+      "tr": "imperatif",
+      "suffix": null,
+      "note": "imperative languages → imperatif diller.",
+      "first_seen": "02_basic_calculator/06_while.md"
+    },
+    {
+      "en": "impl block",
+      "policy": "translate",
+      "tr": "`impl` bloğu",
+      "suffix": null,
+      "note": "Inline kod `impl` aynen; 'block' → 'blok'.",
+      "first_seen": "03_ticket_v1/01_struct.md"
+    },
+    {
+      "en": "implement",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "implement etmek, implement edilir, implement edilmiş",
+      "note": "implement a trait for a type → bir tür için trait'i implement etmek. implementor → (trait'i) implement eden tür.",
+      "first_seen": "02_basic_calculator/06_while.md"
+    },
+    {
+      "en": "implementation",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "implementation'lar, implementation'ı",
+      "note": "trait implementation → trait implementation'ı; default implementation → varsayılan implementation; provided method → sağlanan metot.",
+      "first_seen": "02_basic_calculator/02_variables.md"
+    },
+    {
+      "en": "implicit",
+      "policy": "translate",
+      "tr": "örtük",
+      "suffix": null,
+      "note": "implicitly → örtük olarak; implicit trait bound → örtük trait bound.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "import",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "import'lar, import'u; import etmek",
+      "note": "'bring into scope' ile karıştırma. star import ayrı madde.",
+      "first_seen": "03_ticket_v1/03_modules.md"
+    },
+    {
+      "en": "inbox",
+      "policy": "translate",
+      "tr": "gelen kutusu",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/05_channels.md"
+    },
+    {
+      "en": "index",
+      "policy": "translate",
+      "tr": "indeks",
+      "suffix": "indeksler, indeksi",
+      "note": "indexing → indeksleme; zero-indexed → sıfırdan indekslenen; positional index → konum indeksi.",
+      "first_seen": "05_ticket_v2/05_nullability.md"
+    },
+    {
+      "en": "indirection",
+      "policy": "translate",
+      "tr": "dolaylılık",
+      "suffix": null,
+      "note": null,
+      "first_seen": "04_traits/14_outro.md"
+    },
+    {
+      "en": "inherent method",
+      "policy": "keep_gloss",
+      "tr": "türe doğrudan tanımlanmış metot",
+      "suffix": "inherent metot, inherent metodu",
+      "note": "Metinde 'inherent metot' biçiminde yaz. İlk geçişte: inherent metot (türe doğrudan tanımlanmış metot).",
+      "first_seen": "04_traits/01_trait.md"
+    },
+    {
+      "en": "initialize",
+      "policy": "translate",
+      "tr": "ilk değer atamak",
+      "suffix": null,
+      "note": "initialization → ilk değer atama; initialized → ilk değeri atanmış. 'thread initialization' → 'thread'in başlatılması'.",
+      "first_seen": "02_basic_calculator/02_variables.md"
+    },
+    {
+      "en": "instance",
+      "policy": "keep_gloss",
+      "tr": "örnek",
+      "suffix": "instance'lar, instance'ı, instance'a",
+      "note": "'örnek' kelimesi 'example' için ayrıldığından İngilizce kalır. instantiation → instance oluşturma. İlk geçişte: instance (örnek).",
+      "first_seen": "03_ticket_v1/01_struct.md"
+    },
+    {
+      "en": "integer",
+      "policy": "translate",
+      "tr": "tam sayı",
+      "suffix": null,
+      "note": "signed/unsigned integer → işaretli/işaretsiz tam sayı; integer literal → tam sayı literal'i; integer division → tam sayı bölmesi; integer overflow → tam sayı overflow'u.",
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "interface",
+      "policy": "translate",
+      "tr": "arayüz",
+      "suffix": null,
+      "note": null,
+      "first_seen": "04_traits/00_intro.md"
+    },
+    {
+      "en": "interior mutability",
+      "policy": "keep_gloss",
+      "tr": "iç değiştirilebilirlik",
+      "suffix": "interior mutability'yi",
+      "note": "İlk geçişte: interior mutability (iç değiştirilebilirlik). 'internal mutability' yazımı da aynı terim.",
+      "first_seen": "07_threads/06_interior_mutability.md"
+    },
+    {
+      "en": "invariant",
+      "policy": "keep_gloss",
+      "tr": "değişmez",
+      "suffix": "invariant'lar, invariant'ı",
+      "note": "İlk geçişte: invariant (değişmez).",
+      "first_seen": "03_ticket_v1/03_modules.md"
+    },
+    {
+      "en": "item (code item)",
+      "policy": "translate",
+      "tr": "öğe",
+      "suffix": null,
+      "note": "Doc comment'in ait olduğu öğe (fonksiyon, struct, modül...).",
+      "first_seen": "02_basic_calculator/02_variables.md"
+    },
+    {
+      "en": "iterate",
+      "policy": "translate",
+      "tr": "üzerinde gezinmek",
+      "suffix": null,
+      "note": "iterate over a collection → bir koleksiyon üzerinde gezinmek.",
+      "first_seen": "02_basic_calculator/07_for.md"
+    },
+    {
+      "en": "iteration",
+      "policy": "translate",
+      "tr": "yineleme",
+      "suffix": null,
+      "note": "'Iteration' başlığı → 'Yineleme'. Ticket modelinin 'first iteration'ı gibi 'sürüm' anlamında → 'ilk sürüm'.",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "iterator",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "iterator'lar, iterator'ı, iterator'a",
+      "note": "`Iterator` trait adı kodda aynen.",
+      "first_seen": "02_basic_calculator/07_for.md"
+    },
+    {
+      "en": "join",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "join etmek, join edilir",
+      "note": "Thread'in bitmesini beklemek. 'automatically joined' → 'otomatik olarak join edilir'.",
+      "first_seen": "07_threads/04_scoped_threads.md"
+    },
+    {
+      "en": "key-value",
+      "policy": "translate",
+      "tr": "anahtar-değer",
+      "suffix": null,
+      "note": "key-value pair → anahtar-değer çifti.",
+      "first_seen": "06_ticket_management/15_hashmap.md"
+    },
+    {
+      "en": "keyword",
+      "policy": "translate",
+      "tr": "anahtar kelime",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "lazy",
+      "policy": "keep_gloss",
+      "tr": "tembel",
+      "suffix": null,
+      "note": "'Asynchronous functions are lazy' → 'Asenkron fonksiyonlar lazy'dir (tembeldir)'. Karşıtı: eager.",
+      "first_seen": "08_futures/01_async_fn.md"
+    },
+    {
+      "en": "leak",
+      "policy": "translate",
+      "tr": "sızdırmak",
+      "suffix": null,
+      "note": "leak memory → bellek sızdırmak; leaking data → veri sızdırma; data leakage → veri sızıntısı. `Box::leak` kodda aynen.",
+      "first_seen": "03_ticket_v1/11_destructor.md"
+    },
+    {
+      "en": "library",
+      "policy": "translate",
+      "tr": "kütüphane",
+      "suffix": null,
+      "note": "library crate → kütüphane crate'i; standard library → standart kütüphane.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "lifetime",
+      "policy": "keep_gloss",
+      "tr": "yaşam süresi",
+      "suffix": "lifetime'lar, lifetime'ı, lifetime'a",
+      "note": "İlk geçişte: lifetime (yaşam süresi). 'the lifecycle of a future' → 'future'ın yaşam döngüsü' (farklı kelime). lifetime parameter → lifetime parametresi; lifetime specifier → lifetime belirleyicisi; lifetime annotation → lifetime belirtimi.",
+      "first_seen": "05_ticket_v2/14_source.md"
+    },
+    {
+      "en": "lifetime elision",
+      "policy": "keep_gloss",
+      "tr": "lifetime'ın yazılmadan bırakılması",
+      "suffix": "lifetime elision kuralları",
+      "note": "lifetime elision rules → lifetime elision kuralları. İlk geçişte: lifetime elision (lifetime'ın yazılmadan bırakılması).",
+      "first_seen": "06_ticket_management/06_lifetimes.md"
+    },
+    {
+      "en": "lifetime parameter",
+      "policy": "translate",
+      "tr": "lifetime parametresi",
+      "suffix": null,
+      "note": "lifetime specifier → lifetime belirleyicisi; lifetime annotation → lifetime belirtimi.",
+      "first_seen": "06_ticket_management/06_lifetimes.md"
+    },
+    {
+      "en": "lifetime specifier",
+      "policy": "keep_gloss",
+      "tr": "yaşam süresi belirleyicisi",
+      "suffix": "lifetime belirleyicisi",
+      "note": null,
+      "first_seen": "05_ticket_v2/14_source.md"
+    },
+    {
+      "en": "LIFO",
+      "policy": "keep",
+      "tr": null,
+      "suffix": null,
+      "note": "İlk geçişte: LIFO (Last In, First Out; son giren ilk çıkar).",
+      "first_seen": "03_ticket_v1/08_stack.md"
+    },
+    {
+      "en": "listener",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "listener'lar",
+      "note": null,
+      "first_seen": "08_futures/02_spawn.md"
+    },
+    {
+      "en": "literal",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "literal'ler, literal'i",
+      "note": "string literal → string literal'i; integer literal → tam sayı literal'i.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "liveness",
+      "policy": "translate",
+      "tr": "canlılık",
+      "suffix": null,
+      "note": null,
+      "first_seen": "08_futures/06_async_aware_primitives.md"
+    },
+    {
+      "en": "lock",
+      "policy": "translate",
+      "tr": "kilit",
+      "suffix": "kilitler, kilidi",
+      "note": "lock (fiil) → kilitlemek; acquire a lock → kilidi almak; release the lock → kilidi bırakmak; locking primitive → kilitleme primitive'i; lockless → kilitsiz; 'read-only lock' → 'salt okunur kilit'. coarse-grained / fine-grained locking → kaba taneli / ince taneli kilitleme; read-write lock → okuma-yazma kilidi (reader/writer → okuyucu/yazıcı); mutual exclusion → karşılıklı dışlama; writer starvation → yazıcı açlığı.",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "lockfile",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "lockfile'ı",
+      "note": null,
+      "first_seen": "05_ticket_v2/11_dependencies.md"
+    },
+    {
+      "en": "log",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "log'lar",
+      "note": null,
+      "first_seen": "05_ticket_v2/14_source.md"
+    },
+    {
+      "en": "loop",
+      "policy": "translate",
+      "tr": "döngü",
+      "suffix": "döngüler, döngüsü",
+      "note": "`while`/`for`/`loop` döngüsü; looping construct → döngü yapısı.",
+      "first_seen": "02_basic_calculator/06_while.md"
+    },
+    {
+      "en": "macro",
+      "policy": "translate",
+      "tr": "makro",
+      "suffix": "makrolar, makroyu, makroya",
+      "note": "macro invocation → makro çağrısı. 'procedural macro' ve 'derive macro' kalıpları İngilizce kalır.",
+      "first_seen": "02_basic_calculator/04_panics.md"
+    },
+    {
+      "en": "maintainer",
+      "policy": "translate",
+      "tr": "bakımcı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "manifest",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "manifest'i, manifest dosyası",
+      "note": "`Cargo.toml` dosyası.",
+      "first_seen": "05_ticket_v2/10_packages.md"
+    },
+    {
+      "en": "map (data structure, prose)",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "map'e, map'ten",
+      "note": "`HashMap`/`BTreeMap` için düz metinde 'map'.",
+      "first_seen": "06_ticket_management/15_hashmap.md"
+    },
+    {
+      "en": "marker (TODO, __)",
+      "policy": "translate",
+      "tr": "işaret",
+      "suffix": null,
+      "note": "Egzersizlerdeki `TODO`, `__` gibi işaretler.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "marker trait",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "marker trait'ler, marker trait'i",
+      "note": null,
+      "first_seen": "04_traits/08_sized.md"
+    },
+    {
+      "en": "match",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "match'ler, match'i",
+      "note": "'match on an enum' → 'bir enum üzerinde match yapmak'; match expression → `match` ifadesi. Genel anlamda 'eşleşmek' ('matches exactly' → 'tam olarak eşleşir').",
+      "first_seen": "05_ticket_v2/02_match.md"
+    },
+    {
+      "en": "meme",
+      "policy": "translate",
+      "tr": "internet geyiği",
+      "suffix": null,
+      "note": "Türkçe 'meme' farklı anlama gelir; 'mim' yaygın değil.",
+      "first_seen": "02_basic_calculator/08_overflow.md"
+    },
+    {
+      "en": "memoize",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "memoize etmek",
+      "note": "Gerekirse: önbelleğe almak (memoize etmek).",
+      "first_seen": "06_ticket_management/02_vec.md"
+    },
+    {
+      "en": "memory",
+      "policy": "translate",
+      "tr": "bellek",
+      "suffix": null,
+      "note": "memory management → bellek yönetimi; memory safety → bellek güvenliği; memory-safe → bellek açısından güvenli; memory location → bellek konumu; memory address → bellek adresi. memory layout → bellek düzeni; memory leak → bellek sızıntısı.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "memory profiler",
+      "policy": "translate",
+      "tr": "bellek profiler aracı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "03_ticket_v1/09_heap.md"
+    },
+    {
+      "en": "metadata",
+      "policy": "translate",
+      "tr": "meta veri",
+      "suffix": null,
+      "note": null,
+      "first_seen": "03_ticket_v1/10_references_in_memory.md"
+    },
+    {
+      "en": "method",
+      "policy": "translate",
+      "tr": "metot",
+      "suffix": "metotlar, metodu, metoda",
+      "note": "TDK yazımı 'metot' (çekimde 'metodu'). method call syntax → metot çağrı söz dizimi; static method → statik metot; trait method → trait metodu.",
+      "first_seen": "02_basic_calculator/09_saturating.md"
+    },
+    {
+      "en": "mock",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "mock'lar",
+      "note": null,
+      "first_seen": "04_traits/14_outro.md"
+    },
+    {
+      "en": "module",
+      "policy": "translate",
+      "tr": "modül",
+      "suffix": "modüller, modülü",
+      "note": "submodule → alt modül; parent module → üst modül; module tree → modül ağacı; root module → kök modül. inline module → satır içi modül.",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "move",
+      "policy": "keep_gloss",
+      "tr": "taşıma",
+      "suffix": "move etmek, move edilir, move edilmiş",
+      "note": "Sahipliğin aktarılması; derleyici mesajlarıyla ('value moved here') bağlantı kurulsun diye İngilizce. İlk geçişte: move (taşıma). 'move forward / move on' gibi genel anlamda Türkçe.",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "move semantics",
+      "policy": "keep_gloss",
+      "tr": "taşıma semantiği",
+      "suffix": "move semantics'i",
+      "note": "İlk geçişte: move semantics (taşıma semantiği).",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "mpsc",
+      "policy": "keep",
+      "tr": null,
+      "suffix": null,
+      "note": "multi-producer, single-consumer → çok üreticili, tek tüketicili; producer → üretici; consumer → tüketici.",
+      "first_seen": "07_threads/05_channels.md"
+    },
+    {
+      "en": "multithreaded",
+      "policy": "translate",
+      "tr": "çok thread'li",
+      "suffix": null,
+      "note": "single-threaded → tek thread'li; multithreaded runtime → çok thread'li runtime; 'multi-threaded' yazımı da.",
+      "first_seen": "07_threads/00_intro.md"
+    },
+    {
+      "en": "mutable",
+      "policy": "keep_gloss",
+      "tr": "değiştirilebilir",
+      "suffix": "mutable'dır",
+      "note": "mutable reference → mutable referans; mutable slice → mutable slice; mutably → mutable olarak. İlk geçişte: mutable (değiştirilebilir). mutability → mutability (değiştirilebilirlik).",
+      "first_seen": "02_basic_calculator/06_while.md"
+    },
+    {
+      "en": "mutate",
+      "policy": "translate",
+      "tr": "değiştirmek",
+      "suffix": null,
+      "note": "mutation → değişiklik / değiştirme.",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "namespace",
+      "policy": "translate",
+      "tr": "ad alanı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "03_ticket_v1/03_modules.md"
+    },
+    {
+      "en": "negative trait bound",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "negative trait bound'lar",
+      "note": null,
+      "first_seen": "04_traits/09_from.md"
+    },
+    {
+      "en": "nullable",
+      "policy": "translate",
+      "tr": "null olabilen",
+      "suffix": null,
+      "note": "nullability → null olabilirlik; nullable value → null olabilen değer. `null` kodda aynen.",
+      "first_seen": "05_ticket_v2/00_intro.md"
+    },
+    {
+      "en": "object (OOP)",
+      "policy": "translate",
+      "tr": "nesne",
+      "suffix": null,
+      "note": null,
+      "first_seen": "03_ticket_v1/05_encapsulation.md"
+    },
+    {
+      "en": "opaque return type",
+      "policy": "translate",
+      "tr": "opak dönüş türü",
+      "suffix": null,
+      "note": null,
+      "first_seen": "06_ticket_management/08_impl_trait.md"
+    },
+    {
+      "en": "operand",
+      "policy": "translate",
+      "tr": "işlenen",
+      "suffix": null,
+      "note": null,
+      "first_seen": "04_traits/10_assoc_vs_generic.md"
+    },
+    {
+      "en": "operating system",
+      "policy": "translate",
+      "tr": "işletim sistemi",
+      "suffix": null,
+      "note": "'OS' kısaltması da 'işletim sistemi' olarak çevrilir; 'OS thread' → 'işletim sistemi thread'i'.",
+      "first_seen": "03_ticket_v1/09_heap.md"
+    },
+    {
+      "en": "operator",
+      "policy": "translate",
+      "tr": "operatör",
+      "suffix": null,
+      "note": "dereference operator → dereference operatörü; `?` operator → `?` operatörü. arithmetic operator → aritmetik operatör; comparison operator → karşılaştırma operatörü.",
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "operator overloading",
+      "policy": "keep_gloss",
+      "tr": "operatör aşırı yükleme",
+      "suffix": "operator overloading'i",
+      "note": "İlk geçişte: operator overloading (operatör aşırı yükleme).",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "optimistic concurrency control",
+      "policy": "translate",
+      "tr": "iyimser eşzamanlılık kontrolü",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/13_without_channels.md"
+    },
+    {
+      "en": "orphan rule",
+      "policy": "keep_gloss",
+      "tr": "yetim kuralı",
+      "suffix": "orphan rule'u, orphan rule'a",
+      "note": "İlk geçişte: orphan rule (yetim kuralı). foreign type → yabancı tür; foreign trait → yabancı trait.",
+      "first_seen": "04_traits/02_orphan_rule.md"
+    },
+    {
+      "en": "outlive",
+      "policy": "translate",
+      "tr": "daha uzun yaşamak",
+      "suffix": null,
+      "note": "'X cannot outlive Y' → 'X, Y'den daha uzun yaşayamaz'.",
+      "first_seen": "06_ticket_management/06_lifetimes.md"
+    },
+    {
+      "en": "outro (lesson)",
+      "policy": "translate",
+      "tr": "Kapanış",
+      "suffix": null,
+      "note": "Bölüm sonu sayfaları.",
+      "first_seen": "08_futures/08_outro.md"
+    },
+    {
+      "en": "overflow",
+      "policy": "keep_gloss",
+      "tr": "taşma",
+      "suffix": "overflow'lar, overflow'u; overflow etmek",
+      "note": "integer overflow → tam sayı overflow'u. İlk geçişte: overflow (taşma). `overflow-checks` ayarı kodda aynen.",
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "overhead",
+      "policy": "translate",
+      "tr": "ek yük",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/12_rw_lock.md"
+    },
+    {
+      "en": "override",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "override etmek, override edilir",
+      "note": "Varsayılan implementation'ı ya da varsayılan ayarı geçersiz kılmak.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "owned",
+      "policy": "keep_gloss",
+      "tr": "sahipli",
+      "suffix": null,
+      "note": "owned value → owned değer; owned type → owned tür. İlk geçişte: owned (sahipli).",
+      "first_seen": "04_traits/06_str_slice.md"
+    },
+    {
+      "en": "owner",
+      "policy": "translate",
+      "tr": "sahip",
+      "suffix": "sahibi",
+      "note": "own → sahip olmak ('if you own a value' → 'bir değere sahipsen').",
+      "first_seen": "03_ticket_v1/06_ownership.md"
+    },
+    {
+      "en": "ownership",
+      "policy": "keep_gloss",
+      "tr": "sahiplik",
+      "suffix": "ownership'i, ownership'e",
+      "note": "İlk geçişte: ownership (sahiplik). take ownership → ownership'i almak; transfer ownership → ownership'i devretmek; ownership system → ownership sistemi.",
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "package",
+      "policy": "translate",
+      "tr": "paket",
+      "suffix": "paketler, paketi",
+      "note": "package registry → paket registry'si; packaging system → paket sistemi.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "pair programming",
+      "policy": "translate",
+      "tr": "eşli programlama",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "panic",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "panic'ler, panic'i; panic'lemek",
+      "note": "Fiil: 'it panics' → 'panic'ler'; 'will panic' → 'panic'leyecek'; trigger a panic → panic oluşturmak. `panic!` makrosu kodda aynen.",
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "paperback",
+      "policy": "translate",
+      "tr": "ciltsiz baskı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "parallelism",
+      "policy": "translate",
+      "tr": "paralellik",
+      "suffix": null,
+      "note": "in parallel → paralel olarak.",
+      "first_seen": "07_threads/11_locks.md"
+    },
+    {
+      "en": "parameter",
+      "policy": "translate",
+      "tr": "parametre",
+      "suffix": null,
+      "note": "input parameter → girdi parametresi. Bkz. 'type parameter', 'lifetime parameter'.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "parse",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "parse etmek, parse edilir",
+      "note": "parsing → parse etme.",
+      "first_seen": "05_ticket_v2/08_error_enums.md"
+    },
+    {
+      "en": "part (of a lesson title)",
+      "policy": "translate",
+      "tr": "kısım",
+      "suffix": null,
+      "note": "Başlıklarda 'pt. 1' / 'part 1' → '1. Kısım'. 'bölüm' chapter için ayrılmıştır.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "patch",
+      "policy": "keep_gloss",
+      "tr": "yama",
+      "suffix": "patch'ler, patch'i; patch'lemek",
+      "note": "İlk geçişte: patch (yama). patching → patch'leme.",
+      "first_seen": "07_threads/10_patch.md"
+    },
+    {
+      "en": "path (dependency)",
+      "policy": "keep_gloss",
+      "tr": "yol",
+      "suffix": "path bağımlılığı",
+      "note": "Cargo.toml'daki `path = ...` bağımlılıkları.",
+      "first_seen": "05_ticket_v2/11_dependencies.md"
+    },
+    {
+      "en": "path (module/item)",
+      "policy": "translate",
+      "tr": "yol",
+      "suffix": null,
+      "note": "item paths → öğe yolları. Cargo'daki path bağımlılığı için bkz. 'path (dependency)'.",
+      "first_seen": "03_ticket_v1/03_modules.md"
+    },
+    {
+      "en": "pattern",
+      "policy": "keep_gloss",
+      "tr": "desen",
+      "suffix": "pattern'ler, pattern'i",
+      "note": "match pattern'ı. 'a common pattern in Rust code' gibi genel 'kalıp/yöntem' anlamında → 'kalıp'. design pattern → tasarım deseni. design pattern → tasarım deseni.",
+      "first_seen": "05_ticket_v2/02_match.md"
+    },
+    {
+      "en": "pattern matching",
+      "policy": "keep_gloss",
+      "tr": "desen eşleştirme",
+      "suffix": null,
+      "note": "İlk geçişte: pattern matching (desen eşleştirme).",
+      "first_seen": "05_ticket_v2/03_variants_with_data.md"
+    },
+    {
+      "en": "pending (future state)",
+      "policy": "keep_gloss",
+      "tr": "beklemede",
+      "suffix": null,
+      "note": "`Poll::Pending` ile bağlantılı; pending future → beklemedeki future.",
+      "first_seen": "08_futures/04_future.md"
+    },
+    {
+      "en": "placeholder",
+      "policy": "translate",
+      "tr": "yer tutucu",
+      "suffix": null,
+      "note": null,
+      "first_seen": "06_ticket_management/12_two_states.md"
+    },
+    {
+      "en": "playground",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "playground'u, playground'da",
+      "note": "Rust playground → Rust playground'u.",
+      "first_seen": "02_basic_calculator/04_panics.md"
+    },
+    {
+      "en": "pointer",
+      "policy": "keep_gloss",
+      "tr": "işaretçi",
+      "suffix": "pointer'lar, pointer'ı, pointer'a",
+      "note": "İlk geçişte: pointer (işaretçi). instruction pointer → instruction pointer.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "poll",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "poll etmek, poll edilir",
+      "note": "Future'ı ilerletmek için `poll` çağırmak.",
+      "first_seen": "08_futures/04_future.md"
+    },
+    {
+      "en": "polymorphism",
+      "policy": "translate",
+      "tr": "polimorfizm",
+      "suffix": null,
+      "note": "polymorphic → polimorfik.",
+      "first_seen": "06_ticket_management/08_impl_trait.md"
+    },
+    {
+      "en": "precedence",
+      "policy": "translate",
+      "tr": "öncelik",
+      "suffix": null,
+      "note": "operator precedence → operatör önceliği.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "predicate",
+      "policy": "keep_gloss",
+      "tr": "yüklem",
+      "suffix": "predicate'ler, predicate'i",
+      "note": "İlk geçişte: predicate (yüklem).",
+      "first_seen": "06_ticket_management/07_combinators.md"
+    },
+    {
+      "en": "preempt",
+      "policy": "keep_gloss",
+      "tr": "kesintiye uğratmak",
+      "suffix": "preempt etmek, preempt edilemez",
+      "note": "İlk geçişte: preempt (kesintiye uğratmak).",
+      "first_seen": "08_futures/05_blocking.md"
+    },
+    {
+      "en": "prelude",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "prelude'a, prelude'da",
+      "note": null,
+      "first_seen": "04_traits/01_trait.md"
+    },
+    {
+      "en": "primitive",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "primitive'ler, primitive'i",
+      "note": "Eşzamanlılık/async yapı taşları: locking primitive → kilitleme primitive'i; async-aware primitives → async-aware primitive'ler. 'primitive type' için ayrı madde.",
+      "first_seen": "07_threads/07_ack.md"
+    },
+    {
+      "en": "primitive type",
+      "policy": "translate",
+      "tr": "ilkel tür",
+      "suffix": null,
+      "note": null,
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "private",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "private'tır",
+      "note": "Görünürlük. Karşıtı: public.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "procedural macro",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "procedural macro'lar, procedural macro'yu",
+      "note": "'proc macro' kısaltması da aynen.",
+      "first_seen": "05_ticket_v2/10_packages.md"
+    },
+    {
+      "en": "process (OS)",
+      "policy": "translate",
+      "tr": "süreç",
+      "suffix": null,
+      "note": "İlk geçişte: süreç (process).",
+      "first_seen": "07_threads/01_threads.md"
+    },
+    {
+      "en": "production (environment)",
+      "policy": "translate",
+      "tr": "üretim ortamı",
+      "suffix": null,
+      "note": "production system → üretim sistemi.",
+      "first_seen": "07_threads/03_leak.md"
+    },
+    {
+      "en": "profile",
+      "policy": "translate",
+      "tr": "profil",
+      "suffix": null,
+      "note": "Cargo profili: `dev` profili, `release` profili; profile setting → profil ayarı; custom profiles → özel profiller. release mode → release modu.",
+      "first_seen": "02_basic_calculator/08_overflow.md"
+    },
+    {
+      "en": "promotion (integer)",
+      "policy": "translate",
+      "tr": "yükseltme",
+      "suffix": null,
+      "note": "integer promotion → tam sayı yükseltme.",
+      "first_seen": "02_basic_calculator/08_overflow.md"
+    },
+    {
+      "en": "propagate",
+      "policy": "translate",
+      "tr": "iletmek",
+      "suffix": null,
+      "note": "propagating errors → hataları yukarı iletmek; 'the panic won't be propagated' → 'panic iletilmez'.",
+      "first_seen": "05_ticket_v2/14_source.md"
+    },
+    {
+      "en": "public",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "public'tir",
+      "note": "Görünürlük. Karşıtı: private.",
+      "first_seen": "03_ticket_v1/04_visibility.md"
+    },
+    {
+      "en": "race condition",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "race condition'lar, race condition'ı",
+      "note": "racy → race condition'a açık.",
+      "first_seen": "07_threads/11_locks.md"
+    },
+    {
+      "en": "range",
+      "policy": "translate",
+      "tr": "aralık",
+      "suffix": null,
+      "note": "half-open range → yarı açık aralık; inclusive range → kapsayıcı aralık; open-ended range → ucu açık aralık; range query → aralık sorgusu.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "raw pointer",
+      "policy": "keep_gloss",
+      "tr": "ham pointer",
+      "suffix": "raw pointer'lar",
+      "note": "İlk geçişte: raw pointer (ham pointer).",
+      "first_seen": "07_threads/06_interior_mutability.md"
+    },
+    {
+      "en": "re-export",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "re-export etmek",
+      "note": null,
+      "first_seen": "05_ticket_v2/15_outro.md"
+    },
+    {
+      "en": "reader / writer (I/O)",
+      "policy": "translate",
+      "tr": "okuyucu / yazıcı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "08_futures/01_async_fn.md"
+    },
+    {
+      "en": "ready (future state)",
+      "policy": "keep_gloss",
+      "tr": "hazır",
+      "suffix": null,
+      "note": "`Poll::Ready` ile bağlantılı.",
+      "first_seen": "08_futures/04_future.md"
+    },
+    {
+      "en": "recursion",
+      "policy": "translate",
+      "tr": "özyineleme",
+      "suffix": null,
+      "note": "recursive → özyinelemeli.",
+      "first_seen": "02_basic_calculator/06_while.md"
+    },
+    {
+      "en": "refactoring",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "refactoring'i",
+      "note": null,
+      "first_seen": "05_ticket_v2/00_intro.md"
+    },
+    {
+      "en": "reference",
+      "policy": "translate",
+      "tr": "referans",
+      "suffix": "referanslar, referansı",
+      "note": "mutable/immutable reference → mutable/immutable referans; shared/exclusive reference → bkz. 'shared reference'. 'The Rust Reference' doküman adı aynen. shared reference → paylaşılan referans; exclusive reference → dışlayıcı referans.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "reference counting",
+      "policy": "translate",
+      "tr": "referans sayımı",
+      "suffix": null,
+      "note": "reference-counted pointer → referans sayımlı pointer; reference count → referans sayısı.",
+      "first_seen": "07_threads/06_interior_mutability.md"
+    },
+    {
+      "en": "refine (a type)",
+      "policy": "translate",
+      "tr": "daha hassas hale getirmek",
+      "suffix": null,
+      "note": null,
+      "first_seen": "03_ticket_v1/05_encapsulation.md"
+    },
+    {
+      "en": "reflexivity",
+      "policy": "translate",
+      "tr": "yansımalılık",
+      "suffix": null,
+      "note": "reflexive → yansımalı.",
+      "first_seen": "06_ticket_management/15_hashmap.md"
+    },
+    {
+      "en": "registry",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "registry'si",
+      "note": "paket registry'si.",
+      "first_seen": "08_futures/03_runtime.md"
+    },
+    {
+      "en": "repository",
+      "policy": "translate",
+      "tr": "repo",
+      "suffix": "repo'lar, repo'yu, repo'da",
+      "note": "Git deposu; Türkçe yazılımcı kullanımıyla 'repo'.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "required method",
+      "policy": "translate",
+      "tr": "gerekli metot",
+      "suffix": null,
+      "note": "provided method → sağlanan metot ile çift.",
+      "first_seen": "04_traits/03_operator_overloading.md"
+    },
+    {
+      "en": "responsiveness",
+      "policy": "translate",
+      "tr": "yanıt verebilirlik",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/01_threads.md"
+    },
+    {
+      "en": "return",
+      "policy": "translate",
+      "tr": "döndürmek",
+      "suffix": null,
+      "note": "return early → erken dönmek; return position → dönüş konumu; return value → dönüş değeri. return type → dönüş türü.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "right drift",
+      "policy": "translate",
+      "tr": "sağa kayma",
+      "suffix": null,
+      "note": "İç içe bloklarla kodun sağa kayması.",
+      "first_seen": "05_ticket_v2/06_question_mark.md"
+    },
+    {
+      "en": "runtime",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "runtime'lar, runtime'ı, runtime'a",
+      "note": "Async runtime (tokio). Çalışma anı anlamında ('at runtime', 'runtime error', 'runtime performance') bkz. 'runtime (execution)'.",
+      "first_seen": "08_futures/00_intro.md"
+    },
+    {
+      "en": "runtime (execution)",
+      "policy": "translate",
+      "tr": "çalışma zamanı",
+      "suffix": null,
+      "note": "at runtime → çalışma zamanında; runtime error → çalışma zamanı hatası; runtime performance → çalışma zamanı performansı. Karşıtı: compile time.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "saturating arithmetic",
+      "policy": "keep_gloss",
+      "tr": "doygun aritmetik",
+      "suffix": null,
+      "note": "İlk geçişte: saturating arithmetic (doygun aritmetik). 'saturate at the maximum' → 'maksimum değerde sabitlenmek'. `saturating_` metotları kodda aynen.",
+      "first_seen": "02_basic_calculator/09_saturating.md"
+    },
+    {
+      "en": "saturating multiplication",
+      "policy": "translate",
+      "tr": "saturating çarpma",
+      "suffix": null,
+      "note": "'wrapping toplama' ile paralel.",
+      "first_seen": "02_basic_calculator/09_saturating.md"
+    },
+    {
+      "en": "scheduler",
+      "policy": "keep_gloss",
+      "tr": "zamanlayıcı",
+      "suffix": "scheduler'lar, scheduler'ı",
+      "note": "İlk geçişte: scheduler (zamanlayıcı). schedule → zamanlamak; scheduling events → zamanlama olayları. 'timer' ile karışmasın diye İngilizce.",
+      "first_seen": "07_threads/01_threads.md"
+    },
+    {
+      "en": "scope",
+      "policy": "translate",
+      "tr": "kapsam",
+      "suffix": null,
+      "note": "in scope → kapsamda; bring into scope → kapsama almak. `std::thread::scope` ve `Scope` kodda aynen. out of scope → kapsam dışına çıkmak ('goes out of scope' → 'kapsam dışına çıkar').",
+      "first_seen": "03_ticket_v1/03_modules.md"
+    },
+    {
+      "en": "scoped threads",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "scoped thread'ler",
+      "note": "scoped spawn → scoped spawn.",
+      "first_seen": "07_threads/04_scoped_threads.md"
+    },
+    {
+      "en": "section",
+      "policy": "translate",
+      "tr": "kısım",
+      "suffix": "kısımlar, kısmı",
+      "note": "Kursun bir sayfası/dersi ('the \"Syntax\" section' → '\"Syntax\" kısmı'); Cargo.toml'daki `[dependencies]` section → `[dependencies]` kısmı.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "semantics",
+      "policy": "translate",
+      "tr": "semantik",
+      "suffix": null,
+      "note": "semantiği, semantikler.",
+      "first_seen": "02_basic_calculator/10_as_casting.md"
+    },
+    {
+      "en": "semaphore",
+      "policy": "translate",
+      "tr": "semafor",
+      "suffix": null,
+      "note": null,
+      "first_seen": "08_futures/06_async_aware_primitives.md"
+    },
+    {
+      "en": "sequence",
+      "policy": "translate",
+      "tr": "seri",
+      "suffix": null,
+      "note": "Sayı/değer/bit serisi. 'dizi' array için ayrılmıştır.",
+      "first_seen": "02_basic_calculator/07_for.md"
+    },
+    {
+      "en": "serialize",
+      "policy": "translate",
+      "tr": "sıraya sokmak",
+      "suffix": null,
+      "note": "İstekleri tek tek işlenecek şekilde sıralamak anlamında (veri serileştirme değil). serialization → sıraya sokma; serial → sıralı.",
+      "first_seen": "07_threads/13_without_channels.md"
+    },
+    {
+      "en": "setter",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "setter'lar, setter'ı",
+      "note": "setter method → setter metot.",
+      "first_seen": "03_ticket_v1/07_setters.md"
+    },
+    {
+      "en": "shadowing",
+      "policy": "keep_gloss",
+      "tr": "gölgeleme",
+      "suffix": "shadowing'i",
+      "note": "variable shadowing → değişken shadowing'i; shadow → gölgelemek. İlk geçişte: shadowing (gölgeleme).",
+      "first_seen": "03_ticket_v1/07_setters.md"
+    },
+    {
+      "en": "signature",
+      "policy": "translate",
+      "tr": "imza",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "signed",
+      "policy": "translate",
+      "tr": "işaretli",
+      "suffix": null,
+      "note": "unsigned → işaretsiz.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "slice",
+      "policy": "keep_gloss",
+      "tr": "dilim",
+      "suffix": "slice'lar, slice'ı, slice'a",
+      "note": "İlk geçişte: slice (dilim). mutable slice → mutable slice; slice reference → slice referansı.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "smart pointer",
+      "policy": "keep_gloss",
+      "tr": "akıllı pointer",
+      "suffix": "smart pointer'lar",
+      "note": "İlk geçişte: smart pointer (akıllı pointer).",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "snippet",
+      "policy": "translate",
+      "tr": "kod parçası",
+      "suffix": null,
+      "note": null,
+      "first_seen": "04_traits/03_operator_overloading.md"
+    },
+    {
+      "en": "socket",
+      "policy": "translate",
+      "tr": "soket",
+      "suffix": null,
+      "note": null,
+      "first_seen": "08_futures/01_async_fn.md"
+    },
+    {
+      "en": "spawn",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "spawn etmek, spawn edilen",
+      "note": "Yeni thread/task başlatmak. 'spawned thread' → 'spawn edilen thread'; spawner → spawn eden.",
+      "first_seen": "07_threads/01_threads.md"
+    },
+    {
+      "en": "stack",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "stack'ler, stack'i, stack'e, stack'te",
+      "note": "stack frame → stack frame; stack overflow → stack overflow; stack size → stack boyutu. Türkçe 'yığın' kullanılmaz.",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "standard library",
+      "policy": "translate",
+      "tr": "standart kütüphane",
+      "suffix": null,
+      "note": "`std` kodda aynen.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "star import",
+      "policy": "keep_gloss",
+      "tr": "yıldızlı import",
+      "suffix": "star import'lar",
+      "note": "İlk geçişte: star import (yıldızlı import).",
+      "first_seen": "03_ticket_v1/03_modules.md"
+    },
+    {
+      "en": "starvation",
+      "policy": "translate",
+      "tr": "açlık",
+      "suffix": null,
+      "note": "writer starvation → yazıcı açlığı.",
+      "first_seen": "08_futures/05_blocking.md"
+    },
+    {
+      "en": "state",
+      "policy": "translate",
+      "tr": "durum",
+      "suffix": null,
+      "note": "shared state → paylaşılan durum; stateful → durum tutan. Ticket 'status' da 'durum'. state machine → durum makinesi.",
+      "first_seen": "03_ticket_v1/05_encapsulation.md"
+    },
+    {
+      "en": "statement",
+      "policy": "translate",
+      "tr": "deyim",
+      "suffix": "deyimler, deyimi",
+      "note": "`use` statement → `use` deyimi; `match` statement → `match` deyimi. 'expression' (ifade) ile karıştırma.",
+      "first_seen": "02_basic_calculator/03_if_else.md"
+    },
+    {
+      "en": "static",
+      "policy": "translate",
+      "tr": "statik",
+      "suffix": null,
+      "note": "static method → statik metot; static data → statik veri; static analysis → statik analiz; statically typed language → statik türlü dil. `'static` lifetime'ı kodda aynen ('the `'static` lifetime').",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "static analysis",
+      "policy": "translate",
+      "tr": "statik analiz",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "statically typed",
+      "policy": "translate",
+      "tr": "statik türlü",
+      "suffix": null,
+      "note": "statically typed language → statik türlü bir dil.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "status",
+      "policy": "translate",
+      "tr": "durum",
+      "suffix": null,
+      "note": "Ticket'ın durumu (To-Do, InProgress, Done); değer adları kodda aynen.",
+      "first_seen": "03_ticket_v1/01_struct.md"
+    },
+    {
+      "en": "store (ticket store)",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "store'u, store'dan, ticket store'u",
+      "note": "`TicketStore` tür adı aynen.",
+      "first_seen": "06_ticket_management/00_intro.md"
+    },
+    {
+      "en": "string",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "string'ler, string'i, string'e",
+      "note": "`String` / `&str` tür adları kodda aynen. substring → alt string.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "string literal",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "string literal'ler, string literal'i",
+      "note": null,
+      "first_seen": "02_basic_calculator/03_if_else.md"
+    },
+    {
+      "en": "string slice",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "string slice'lar, string slice'ı",
+      "note": null,
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "struct",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "struct'lar, struct'ı, struct'a",
+      "note": "struct-like variant → struct benzeri variant; tuple-like struct → tuple benzeri struct.",
+      "first_seen": "03_ticket_v1/01_struct.md"
+    },
+    {
+      "en": "suffix (literal)",
+      "policy": "translate",
+      "tr": "sonek",
+      "suffix": null,
+      "note": "`2u64` gibi literal sonekleri. Türkçe dilbilgisi eki anlamında değil.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "supertrait",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "supertrait'ler, supertrait'i",
+      "note": "Karşıtı: subtrait. subtrait → subtrait.",
+      "first_seen": "04_traits/09_from.md"
+    },
+    {
+      "en": "syntactic sugar",
+      "policy": "keep_gloss",
+      "tr": "sözdizimsel şeker",
+      "suffix": null,
+      "note": "İlk geçişte: syntactic sugar (sözdizimsel şeker).",
+      "first_seen": "04_traits/03_operator_overloading.md"
+    },
+    {
+      "en": "syntax",
+      "policy": "translate",
+      "tr": "söz dizimi",
+      "suffix": null,
+      "note": "TDK yazımı ayrı: 'söz dizimi'. turbofish syntax → turbofish söz dizimi.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "tag (type as tag)",
+      "policy": "translate",
+      "tr": "etiket",
+      "suffix": null,
+      "note": "Bir değere iliştirilen tür etiketi.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "tail latency",
+      "policy": "keep_gloss",
+      "tr": "kuyruk gecikmesi",
+      "suffix": "tail latency'ler",
+      "note": "İlk geçişte: tail latency (kuyruk gecikmesi). latency → gecikme.",
+      "first_seen": "08_futures/03_runtime.md"
+    },
+    {
+      "en": "target (Cargo)",
+      "policy": "keep_gloss",
+      "tr": "hedef",
+      "suffix": "target'ı, target'lar",
+      "note": "binary target, library target.",
+      "first_seen": "05_ticket_v2/10_packages.md"
+    },
+    {
+      "en": "task",
+      "policy": "keep_gloss",
+      "tr": "görev",
+      "suffix": "task'ler, task'i, task'e",
+      "note": "Async task (tokio). İlk geçişte: task (görev). Genel 'görev/iş' anlamında ('the previous task', 'first task:') → 'görev'.",
+      "first_seen": "08_futures/01_async_fn.md"
+    },
+    {
+      "en": "telemetry",
+      "policy": "translate",
+      "tr": "telemetri",
+      "suffix": null,
+      "note": null,
+      "first_seen": "going_further.md"
+    },
+    {
+      "en": "test",
+      "policy": "translate",
+      "tr": "test",
+      "suffix": "testler, testi",
+      "note": "test function → test fonksiyonu; test case → test case. unit test → birim testi; integration test → entegrasyon testi.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "test suite",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "test suite'i",
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "thread",
+      "policy": "keep_gloss",
+      "tr": "iş parçacığı",
+      "suffix": "thread'ler, thread'i, thread'e",
+      "note": "İlk geçişte: thread (iş parçacığı). child/parent thread → alt/üst thread; client thread → istemci thread'i. main thread → ana thread; detached thread → ayrık thread; thread pool → thread pool.",
+      "first_seen": "07_threads/00_intro.md"
+    },
+    {
+      "en": "thread-safe",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "thread-safe'tir",
+      "note": "thread-safety → thread güvenliği.",
+      "first_seen": "07_threads/11_locks.md"
+    },
+    {
+      "en": "throughput",
+      "policy": "translate",
+      "tr": "işlem hacmi",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/01_threads.md"
+    },
+    {
+      "en": "ticket",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "ticket'lar, ticket'ı, ticket'a",
+      "note": "Kursun örnek alan modeli (JIRA benzeri). Türkçe 'bilet' kullanılmaz.",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "timeout",
+      "policy": "translate",
+      "tr": "zaman aşımı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "08_futures/07_cancellation.md"
+    },
+    {
+      "en": "timer",
+      "policy": "translate",
+      "tr": "zamanlayıcı",
+      "suffix": null,
+      "note": "scheduler bu yüzden İngilizce kalır.",
+      "first_seen": "08_futures/03_runtime.md"
+    },
+    {
+      "en": "trade-off",
+      "policy": "keep_gloss",
+      "tr": "ödünleşim",
+      "suffix": "trade-off'lar, trade-off'u",
+      "note": "İlk geçişte: trade-off (ödünleşim).",
+      "first_seen": "04_traits/10_assoc_vs_generic.md"
+    },
+    {
+      "en": "trait",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "trait'ler, trait'i, trait'e, trait'in",
+      "note": null,
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "trait bound",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "trait bound'lar, trait bound'u",
+      "note": null,
+      "first_seen": "04_traits/05_trait_bounds.md"
+    },
+    {
+      "en": "trait object",
+      "policy": "keep_gloss",
+      "tr": "trait nesnesi",
+      "suffix": "trait object'ler, trait object'i",
+      "note": "İlk geçişte: trait object (trait nesnesi).",
+      "first_seen": "05_ticket_v2/14_source.md"
+    },
+    {
+      "en": "transaction",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "transaction'ı",
+      "note": "SQL transaction'ı.",
+      "first_seen": "08_futures/07_cancellation.md"
+    },
+    {
+      "en": "truncation",
+      "policy": "translate",
+      "tr": "kırpma",
+      "suffix": null,
+      "note": "truncate → kırpmak; 'truncated towards zero' → 'sıfıra doğru kırpılır'.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "truthy",
+      "policy": "keep",
+      "tr": null,
+      "suffix": null,
+      "note": "Orijinalde kalınsa kalın kalır; açıklama eklenmez. Bkz. falsy.",
+      "first_seen": "02_basic_calculator/03_if_else.md"
+    },
+    {
+      "en": "tuple",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "tuple'lar, tuple'ı",
+      "note": "tuple-like variant → tuple benzeri variant; tuple-like struct → tuple benzeri struct.",
+      "first_seen": "05_ticket_v2/05_nullability.md"
+    },
+    {
+      "en": "turbofish",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "turbofish'i",
+      "note": "turbofish syntax → turbofish söz dizimi.",
+      "first_seen": "06_ticket_management/07_combinators.md"
+    },
+    {
+      "en": "tutored session",
+      "policy": "translate",
+      "tr": "eğitmen eşliğindeki oturum",
+      "suffix": null,
+      "note": null,
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "two's complement",
+      "policy": "translate",
+      "tr": "ikiye tümleyen",
+      "suffix": null,
+      "note": "two's complement representation → ikiye tümleyen gösterimi.",
+      "first_seen": "02_basic_calculator/01_integers.md"
+    },
+    {
+      "en": "type",
+      "policy": "translate",
+      "tr": "tür",
+      "suffix": "türler, türü",
+      "note": "type system → tür sistemi; custom type → özel tür; error type → hata türü; target type → hedef tür. 'tip' kullanılmaz. concrete type → somut tür; type system → tür sistemi; unnameable type → adlandırılamayan tür; opaque return type → opak dönüş türü.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "type annotation",
+      "policy": "translate",
+      "tr": "tür belirtimi",
+      "suffix": null,
+      "note": "explicit type annotation → açık tür belirtimi; type hint → tür ipucu.",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "type inference",
+      "policy": "translate",
+      "tr": "tür çıkarımı",
+      "suffix": null,
+      "note": "infer → çıkarsamak ('the compiler infers the type' → 'derleyici türü çıkarsar').",
+      "first_seen": "02_basic_calculator/02_variables.md"
+    },
+    {
+      "en": "type parameter",
+      "policy": "translate",
+      "tr": "tür parametresi",
+      "suffix": null,
+      "note": null,
+      "first_seen": "04_traits/05_trait_bounds.md"
+    },
+    {
+      "en": "undefined behavior",
+      "policy": "translate",
+      "tr": "tanımsız davranış",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/11_locks.md"
+    },
+    {
+      "en": "underflow",
+      "policy": "keep_gloss",
+      "tr": "alttan taşma",
+      "suffix": "underflow'u; underflow etmek",
+      "note": "İlk geçişte: underflow (alttan taşma).",
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "unit struct",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "unit struct'ı",
+      "note": "unit type (birim türü) ile karıştırma.",
+      "first_seen": "04_traits/13_drop.md"
+    },
+    {
+      "en": "unit type",
+      "policy": "keep_gloss",
+      "tr": "birim türü",
+      "suffix": "unit type'ı",
+      "note": "`()` türü. İlk geçişte: unit type (birim türü).",
+      "first_seen": "01_intro/01_syntax.md"
+    },
+    {
+      "en": "unsafe",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "unsafe kod, unsafe'tir",
+      "note": "`unsafe` anahtar kelimesi kodda aynen; prose'da 'unsafe code' → 'unsafe kod'. 'it would be unsafe to...' gibi genel anlamda → 'güvenli olmaz'.",
+      "first_seen": "07_threads/11_locks.md"
+    },
+    {
+      "en": "unwinding",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "unwinding'i",
+      "note": null,
+      "first_seen": "08_futures/02_spawn.md"
+    },
+    {
+      "en": "unwrap",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "unwrap etmek; unwrapping",
+      "note": "Başlık 'Unwrapping' → 'Unwrap etmek'.",
+      "first_seen": "05_ticket_v2/07_unwrap.md"
+    },
+    {
+      "en": "use case",
+      "policy": "translate",
+      "tr": "kullanım senaryosu",
+      "suffix": null,
+      "note": null,
+      "first_seen": "07_threads/03_leak.md"
+    },
+    {
+      "en": "use-after-free",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "use-after-free bug'ları",
+      "note": null,
+      "first_seen": "03_ticket_v1/11_destructor.md"
+    },
+    {
+      "en": "user space",
+      "policy": "translate",
+      "tr": "kullanıcı alanı",
+      "suffix": null,
+      "note": null,
+      "first_seen": "08_futures/02_spawn.md"
+    },
+    {
+      "en": "variable",
+      "policy": "translate",
+      "tr": "değişken",
+      "suffix": "değişkenler, değişkeni",
+      "note": null,
+      "first_seen": "02_basic_calculator/00_intro.md"
+    },
+    {
+      "en": "variant",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "variant'lar, variant'ı, variant'a",
+      "note": "struct-like variant → struct benzeri variant; tuple-like variant → tuple benzeri variant.",
+      "first_seen": "05_ticket_v2/01_enum.md"
+    },
+    {
+      "en": "vector",
+      "policy": "translate",
+      "tr": "vektör",
+      "suffix": "vektörler, vektörü",
+      "note": "`Vec`; growable array type → büyüyebilen dizi türü.",
+      "first_seen": "06_ticket_management/02_vec.md"
+    },
+    {
+      "en": "view (string view)",
+      "policy": "translate",
+      "tr": "görünüm",
+      "suffix": null,
+      "note": null,
+      "first_seen": "04_traits/06_str_slice.md"
+    },
+    {
+      "en": "visibility",
+      "policy": "translate",
+      "tr": "görünürlük",
+      "suffix": null,
+      "note": "visibility modifier → görünürlük belirleyicisi.",
+      "first_seen": "03_ticket_v1/00_intro.md"
+    },
+    {
+      "en": "work-stealing",
+      "policy": "keep_gloss",
+      "tr": "iş çalma",
+      "suffix": "work-stealing'i",
+      "note": "İlk geçişte: work-stealing (iş çalma).",
+      "first_seen": "08_futures/03_runtime.md"
+    },
+    {
+      "en": "workload",
+      "policy": "translate",
+      "tr": "iş yükü",
+      "suffix": null,
+      "note": "read-heavy → okuma ağırlıklı; write-heavy → yazma ağırlıklı.",
+      "first_seen": "07_threads/12_rw_lock.md"
+    },
+    {
+      "en": "workshop runner",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "workshop runner'ı",
+      "note": "`wr` CLI'ı.",
+      "first_seen": "01_intro/00_welcome.md"
+    },
+    {
+      "en": "wrap around",
+      "policy": "keep_gloss",
+      "tr": "başa sarma",
+      "suffix": null,
+      "note": "İlk geçişte: wrap around (başa sarma). wrapping arithmetic → wrapping aritmetiği; wrapping addition → wrapping toplama. `wrapping_` metotları kodda aynen.",
+      "first_seen": "02_basic_calculator/08_overflow.md"
+    },
+    {
+      "en": "wrapper",
+      "policy": "keep_gloss",
+      "tr": "sarmalayıcı",
+      "suffix": "wrapper'lar, wrapper'ı",
+      "note": "wrapper type → wrapper tür. Fiil 'wrap' (bir değeri sarmak) → 'sarmalamak'. İlk geçişte: wrapper (sarmalayıcı).",
+      "first_seen": "05_ticket_v2/05_nullability.md"
+    },
+    {
+      "en": "yield",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "yield etmek, yield edilir",
+      "note": "Async: kontrolü runtime'a bırakmak ('yield control back to the runtime' → 'kontrolü runtime'a yield etmek'). Iterator bağlamında ('yields (index, value) pairs') → 'üretmek'.",
+      "first_seen": "08_futures/01_async_fn.md"
+    },
+    {
+      "en": "yield point",
+      "policy": "keep",
+      "tr": null,
+      "suffix": "yield point'ler, yield point'i",
+      "note": null,
+      "first_seen": "08_futures/04_future.md"
+    }
+  ]
+}
