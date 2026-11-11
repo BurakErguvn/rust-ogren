@@ -1,0 +1,2 @@
+# O'Reilly blocks automated requests (403), so the link checker cannot verify it.
+^https://www\.oreilly\.com/

@@ -1,0 +1,15 @@
+{
+  "removed": [
+    "01_intro/00_welcome",
+    "02_basic_calculator/00_intro",
+    "03_ticket_v1/00_intro",
+    "03_ticket_v1/11_destructor",
+    "04_traits/00_intro",
+    "04_traits/08_sized",
+    "05_ticket_v2/00_intro",
+    "06_ticket_management/00_intro",
+    "07_threads/00_intro",
+    "07_threads/14_sync",
+    "08_futures/00_intro"
+  ]
+}

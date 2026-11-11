@@ -1,0 +1,9 @@
+[package]
+name = "tr-check"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+ra_ap_rustc_lexer = { package = "ra-ap-rustc_lexer", version = "=0.184.0" }
+pulldown-cmark = { version = "=0.13.6", default-features = false }

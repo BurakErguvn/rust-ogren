@@ -1,0 +1,8 @@
+{
+  "notes": [
+    {
+      "before": "structure",
+      "markdown": "**Bunlarla uğraşmana gerek yok!** Aşağıdaki kısımlar, kursu kendi bilgisayarında takip etmek için gereken kurulumu anlatıyor: repo'yu klonlamak, Rust'ı kurmak, `wr` aracını çalıştırmak. Bu uygulamayı tam da bu yüzden senin için hazırladık: Rust araçları, editör ve test çalıştırıcı zaten hazır.\\\nAnlatımı burada okuyabilir, her sayfanın sonundaki **Egzersize geç** ile egzersizi tarayıcıdaki editörde çözebilir, **Test et** ve **Teslim et** ile kontrol edebilirsin. Kurulum kısımlarını yalnızca merak edersen oku; atlayıp doğrudan bir sonraki sayfaya geçebilirsin."
+    }
+  ]
+}

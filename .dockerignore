@@ -1,0 +1,10 @@
+# Build context for the Dockerfile: keep it small and free of local state.
+.git
+.claude
+**/target
+**/node_modules
+app/workspace
+app/data
+app/web/.next
+app/web/out
+exercises/progress.db
