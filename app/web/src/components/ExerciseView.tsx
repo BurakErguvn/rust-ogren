@@ -134,10 +134,12 @@ export default function ExerciseView({ pageId }: { pageId: string }) {
       if (dirtyRef.current.size === 0) return true;
       setSaveState('saving');
       let ok = true;
+      let firstSaved: string | null = null;
       lastSaveError.current = null;
       for (const [path, content] of [...dirtyRef.current]) {
         try {
           await api.saveFile(id, path, content);
+          firstSaved ??= path;
           if (dirtyRef.current.get(path) === content) dirtyRef.current.delete(path);
           setSaveErrors((m) => {
             if (!m.has(path)) return m;
@@ -154,6 +156,8 @@ export default function ExerciseView({ pageId }: { pageId: string }) {
         }
       }
       syncDirty();
+      // Disk değişti: rust-analyzer'ın `cargo check` teşhisleri yenilensin.
+      if (firstSaved) editorRef.current?.notifySaved(firstSaved);
       setSaveState(!ok ? 'error' : dirtyRef.current.size > 0 ? 'dirty' : 'saved');
       return ok;
     });
@@ -261,6 +265,7 @@ export default function ExerciseView({ pageId }: { pageId: string }) {
       dirtyRef.current.clear();
       const d = await api.reset(pageId);
       setData(d);
+      editorRef.current?.notifySaved();
       setProgress(d.progress);
       syncDirty();
       setSaveState('saved');
@@ -290,6 +295,7 @@ export default function ExerciseView({ pageId }: { pageId: string }) {
       try {
         await saveChain.current;
         await api.saveFile(pageId, path, '');
+        editorRef.current?.notifySaved();
         setData((d) => (d ? { ...d, files: insertFile(d.files, { path, content: '', editable: true, language: 'rust' }) } : d));
         setCreated((c) => {
           const next = [...c, path];
@@ -321,6 +327,7 @@ export default function ExerciseView({ pageId }: { pageId: string }) {
           if (!(e instanceof ApiError && e.status === 404)) throw e;
         }
         setData((d) => (d ? { ...d, files: d.files.filter((f) => f.path !== path) } : d));
+        editorRef.current?.notifySaved();
         setStale(`${path} dosyası silindi`);
         setSaveErrors((m) => {
           if (!m.has(path)) return m;

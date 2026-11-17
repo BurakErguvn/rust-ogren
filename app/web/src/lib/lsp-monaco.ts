@@ -118,6 +118,16 @@ export class LspSession {
     this.client.closeDocument(lspUri);
   }
 
+  /**
+   * Diskteki dosyalar değişti (kaydetme, yeni dosya, silme, sıfırlama). Verilen belge açıksa onun,
+   * değilse (ör. Cargo.toml) herhangi bir açık .rs belgesinin kaydedildiği bildirilir; flycheck
+   * tüm workspace'i yeniden denetler.
+   */
+  notifySaved(lspUri?: string): void {
+    const uri = lspUri && this.models.has(lspUri) ? lspUri : this.models.keys().next().value;
+    if (uri) this.client.saveDocument(uri);
+  }
+
   dispose(): void {
     for (const uri of [...this.models.keys()]) this.removeModel(uri);
     this.providers.forEach((p) => p.dispose());
