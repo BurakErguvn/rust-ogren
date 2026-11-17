@@ -527,8 +527,7 @@ async fn static_files(State(state): State<AppState>, req: Request<Body>) -> Resp
     let svc = ServeDir::new(dist)
         .append_index_html_on_directories(true)
         .not_found_service(ServeFile::new(dist.join("404.html")));
-    match svc.oneshot(req).await {
-        Ok(r) => r.into_response(),
-        Err(e) => ApiError::internal("serving static file", e).into_response(),
-    }
+    // ServeDir's error type is `Infallible`.
+    let Ok(res) = svc.oneshot(req).await;
+    res.into_response()
 }
