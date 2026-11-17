@@ -126,6 +126,14 @@ export class LspClient {
     }
   }
 
+  /**
+   * Belgenin diske kaydedildiğini bildirir. rust-analyzer `cargo check`'i (flycheck) yalnızca
+   * kaydetmede yeniden çalıştırır; bu bildirim olmadan rustc teşhisleri eskimiş halde kalır.
+   */
+  saveDocument(uri: string): void {
+    if (this.initialized && this.docs.has(uri)) this.notify('textDocument/didSave', { textDocument: { uri } });
+  }
+
   closeDocument(uri: string): void {
     if (!this.docs.delete(uri)) return;
     if (this.initialized) this.notify('textDocument/didClose', { textDocument: { uri } });
@@ -195,7 +203,7 @@ export class LspClient {
           workspace: { configuration: true, workspaceFolders: true },
           experimental: { serverStatusNotification: true },
           textDocument: {
-            synchronization: { dynamicRegistration: false, didSave: false },
+            synchronization: { dynamicRegistration: false, didSave: true },
             publishDiagnostics: { relatedInformation: false, tagSupport: { valueSet: [1, 2] } },
             hover: { contentFormat: ['markdown', 'plaintext'] },
             completion: {

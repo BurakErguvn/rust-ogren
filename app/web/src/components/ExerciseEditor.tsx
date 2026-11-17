@@ -15,6 +15,8 @@ const SAVE_MARKER_OWNER = 'save';
 
 export interface EditorHandle {
   reveal: (path: string, line: number, column: number) => void;
+  /** Dosyalar diske yazıldıktan sonra çağrılır; rust-analyzer'ın `cargo check`'i yeniden çalışır. */
+  notifySaved: (path?: string) => void;
 }
 
 interface Props {
@@ -373,8 +375,9 @@ export default function ExerciseEditor({ data, diagnostics, dirty, saveErrors, o
         editor.revealPositionInCenter(pos);
         editor.focus();
       },
+      notifySaved: (path) => sessionRef.current?.notifySaved(path ? docUri(path) : undefined),
     }),
-    [activate],
+    [activate, docUri],
   );
 
   const lspClass = `lsp lsp--${lsp.status}`;
