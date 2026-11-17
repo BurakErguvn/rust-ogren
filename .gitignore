@@ -6,6 +6,7 @@ app/workspace/
 app/web/node_modules/
 app/web/.next/
 app/web/out/
+app/web/tsconfig.tsbuildinfo
 app/data/
 
 # Turkish web app (local planning files)

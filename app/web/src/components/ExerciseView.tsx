@@ -169,6 +169,8 @@ export default function ExerciseView({ pageId }: { pageId: string }) {
       const had = dirtyRef.current.has(path);
       dirtyRef.current.set(path, content);
       if (!had) syncDirty();
+      // Son çalıştırmanın sonucu artık eski kodun sonucu: işaretleri kalkar, panel uyarır.
+      setStale((s) => s ?? `${path} düzenlendi`);
       setSaveState((s) => (s === 'saving' ? s : 'dirty'));
       if (autosaveTimer.current) clearTimeout(autosaveTimer.current);
       autosaveTimer.current = setTimeout(() => void saveAll(), 1000);
